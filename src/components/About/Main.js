@@ -8,6 +8,7 @@ import Benefit from '../Menhomethree/Benefit'
 import Team from '../Menabout/Team'
 import Clienttwo from '../Menhometwo/Clienttwo'
 import Footer from '../Footer/Main'
+import Benefit2 from '../Menhomethree/Benefit2'
 
 function Main() {
     return (
@@ -16,9 +17,13 @@ function Main() {
                 <Header />
                 <Breadcrumb subtitle="Home" title="About" />
                 <Whychoose />
+
+                <Benefit />
+                <Benefit2/>
+
                 <Testimonial />
                 <Ctathree />
-                <Benefit />
+                
                 <Team />
                 <Clienttwo />
                 <Footer />

@@ -179,6 +179,29 @@ function Whychoose() {
                                         connecter les acteurs (entreprises, professionnels, universités) entre eux et aux opportunités et, réduire ainsi les barrières au succès collectif et à la création de richesse collective.
                                         </li>
                                     </ul>
+                                    <ul className="why-choose-two__feature   ">
+                                    <li>
+                                        <i className="fas fa-check-circle" />
+                                        Understand Your Needs
+                                    </li>
+                                    <li>
+                                        <i className="fas fa-check-circle" />
+                                        Find the Perfect Candidate
+                                    </li>
+                                </ul>
+                                <div className="why-choose-two__progress col-xl-6">
+                                    <h4 className="why-choose-two__progress__title">Recruitments</h4>
+                                    <div className="why-choose-two__progress__bar" >
+                                        <div className="why-choose-two__progress__inner count-bar" style={{ width: "89%" }}>
+                                            <div className="why-choose-two__progress__inner count-bar counted" data-percent="89%" >
+                                                <div className="why-choose-two__progress__number count-text">89%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <Link to="/services" className="hiredots-btn">
+                                    <span>Discover More</span>
+                                </Link>
 
                                 </p>
                 </div>
