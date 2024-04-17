@@ -4045,6 +4045,10 @@ body.megamenu-popup-active .mobile-nav__content {
   margin-right: 10px;
   color: var(--hiredots-base, #00cde5);
 }
+/* .why-choose-two__featurec i {
+  margin-right: 10px;
+  color: var(--hiredots-base, #00cde5);
+} */
 .why-choose-two__progress {
   margin-top: 30px;
   margin-bottom: 40px;

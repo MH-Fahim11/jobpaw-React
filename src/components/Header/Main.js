@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import Logo from '../../assets/images/logo-dark.png'
-import Logo1 from '../../assets/images/logo-light.png'
+import Logo from '../../assets/images/logo-light.svg'
+import Logo1 from '../../assets/images/logo-light.svg'
 import WOW from 'wowjs'
 
 function Main() {
