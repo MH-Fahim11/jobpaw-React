@@ -8,10 +8,8 @@ function Main() {
     return (
         <>
             <div className="page-wrapper">
-                <Header />
                 <Breadcrumb subtitle="Home" title="Services" />
                 <Servicepage />
-                <Footer />
             </div>
 
         </>

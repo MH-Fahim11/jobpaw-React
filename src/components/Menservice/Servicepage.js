@@ -1,98 +1,77 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Service1 from '../../assets/images/services/sv-1.jpg';
-import Service2 from '../../assets/images/services/sv-2.jpg';
-import Service3 from '../../assets/images/services/sv-3.jpg';
-import Service4 from '../../assets/images/services/sv-4.jpg';
-import Service5 from '../../assets/images/services/sv-5.jpg';
-import Service6 from '../../assets/images/services/sv-6.jpg';
+import Service1 from "../../assets/images/services/about.png";
+import Service2 from "../../assets/images/services/contact.png";
+import Service3 from "../../assets/images/services/faq.png";
+import Service4 from "../../assets/images/services/forum.png";
+import Service5 from "../../assets/images/services/bannierepub.png";
+import Service6 from "../../assets/images/services/creation.png";
 
 function Servicepage() {
-    const services = [
-        {
-            image: Service1,
-            category: "Management",
-            icon: "consulting",
-            title: "HR Consulting",
-            link: "/service-consulting",
-            text: "Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod"
-        },
-        {
-            image: Service2,
-            category: "Resources",
-            icon: "controller",
-            title: "Tech Resources",
-            link: "/service-resources",
-            text: "Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod"
-        },
-        {
-            image: Service3,
-            category: "Solution",
-            icon: "policy",
-            title: "Staffing Solution",
-            link: "/service-hydro",
-            text: "Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod"
-        },
-        {
-            image: Service4,
-            category: "Program",
-            icon: "job",
-            title: "Corporate Program",
-            link: "/service-program",
-            text: "Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod"
-        },
-        {
-            image: Service5,
-            category: "Training",
-            icon: "teaching",
-            title: "Leadership Training",
-            link: "/service-training",
-            text: "Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod"
-        },
-        {
-            image: Service6,
-            category: "Management",
-            icon: "employment",
-            title: "Staff Management",
-            link: "/service-management",
-            text: "Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod"
-        }
-    ];
+  const services = [
+    {
+      image: Service1,
+      title: "A propos de JobPaw",
+      path: "/about",
+    },
+    {
+      image: Service2,
+      title: "Contactez-nous",
+      path: "/contact",
+    },
+    {
+      image: Service3,
+      title: "Questions-Réponses",
+      path: "/faq",
+    },
+    {
+      image: Service4,
+      title: "Témoignage",
+      path: "/testimonials",
+    },
+    {
+      image: Service5,
+      title: "Mettre publicité sur JobPaw",
+      path: "/services/advertise-on-jobpaw",
+    },
+    {
+      image: Service6,
+      title: "Cartographie des opportunités",
+    },
+  ];
 
-    return (
-        <section className="service-one service-one--page">
-            <div className="container">
-                <div className="row gutter-y-30">
-                    {services.map((service, index) => (
-                        <div key={index} className="col-md-6 col-lg-4">
-                            <div className="service-one-card service-card-two" data-wow-duration="1500ms" data-wow-delay={`${index}ms`}>
-                                <div className="service-one-card__image">
-                                    <img src={service.image} alt={service.title} />
-                                </div>
-                                <div className="service-one-card__content">
-                                    <div className="service-one-card__icon">
-                                        <i className={`icon-${service.icon}`} />
-                                        <Link to="/services" className="service-one-card__cat">
-                                            {service.category}
-                                        </Link>
-                                    </div>
-                                    <h3 className="service-one-card__title">
-                                        <Link to={service.link}>{service.title}</Link>
-                                    </h3>
-                                    <p className="service-one-card__text">{service.text}</p>
-                                </div>
-                                <Link to={service.link} className="service-one-card__link">
-                                    Read More
-                                    <i className="icon-right-arrow" />
-                                </Link>
-                            </div>
-                        </div>
-                    ))}
+  return (
+    <section className="service-one service-one--page">
+      <div className="container">
+        <div className="row gutter-y-30">
+          {services.map((feature, index) => (
+            <div
+              key={index}
+              className="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay={`${100 * (index + 1)}ms`}
+            >
+              <div className="feature-one__item text-center">
+                <div className="feature-one__item__img2">
+                  <img src={feature.image} alt="hiredots" />
                 </div>
+                <div className="feature-one__item__content">
+                  <div className="feature-one__item__ball" />
+                  <div className="feature-one__item__icon">
+                    <span className={feature.icon} />
+                  </div>
+                  <h3 className="feature-one__item__title">{feature.title}</h3>
+                  <Link to={feature.path} className="hiredots-btn">
+                    <span>Details</span>
+                  </Link>
+                </div>
+              </div>
             </div>
-        </section>
-    );
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Servicepage;
