@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 
 import Project1 from '../../assets/images/professionnels/stat.png';
 import Project2 from '../../assets/images/professionnels/pro.png';
-import Project3 from '../../assets/images/project/project-1-3.jpg';
-import Project4 from '../../assets/images/project/project-1-4.jpg';
-import Project5 from '../../assets/images/project/project-1-5.jpg';
-import Project6 from '../../assets/images/project/project-1-6.jpg';
+import Project3 from '../../assets/images/professionnels/cv.png';
+import Project4 from '../../assets/images/professionnels/offreemploi.png';
+import Project5 from '../../assets/images/professionnels/coach.png';
+import Project6 from '../../assets/images/professionnels/seminair.png';
+import Project7 from '../../assets/images/professionnels/creation.png';
+import Project8 from '../../assets/images/professionnels/bourse.png';
+import Project9 from '../../assets/images/professionnels/search.png';
 
 function Projectone() {
     // Array of project image paths
@@ -20,6 +23,41 @@ function Projectone() {
         {
             title:"Choisir université ou école",
             img: Project2,
+            path: "/professionnels/choose-school-or-universiry",
+        },
+        {
+            title:"Créer un CVPaw",
+            img: Project3,
+            path: "/professionnels/choose-school-or-universiry",
+        },
+        {
+            title:"Trouver un emploi",
+            img: Project4,
+            path: "/professionnels/choose-school-or-universiry",
+        },
+        {
+            title:"Avoir un coaching",
+            img: Project5,
+            path: "/professionnels/choose-school-or-universiry",
+        },
+        {
+            title:"Trouver formation continue",
+            img: Project6,
+            path: "/professionnels/choose-school-or-universiry",
+        },
+        {
+            title:"Monter son entreprise",
+            img: Project7,
+            path: "/professionnels/choose-school-or-universiry",
+        },
+        {
+            title:"Trouver bourse d’étude",
+            img: Project8,
+            path: "/professionnels/choose-school-or-universiry",
+        },
+        {
+            title:"Consulter travaux recherche",
+            img: Project9,
             path: "/professionnels/choose-school-or-universiry",
         },
     ]
