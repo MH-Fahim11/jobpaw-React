@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
-import About1 from '../../assets/images/resources/about-1-1.jpg'
+import About1 from '../../assets/images/resources/about-1-1.png'
 import Aboutshape1 from '../../assets/images/resources/about-1-shape-1.png'
 import Aboutblubimg from '../../assets/images/resources/about-1-bulb.png'
 import Aboutauthor from '../../assets/images/resources/about-1-author.jpg'

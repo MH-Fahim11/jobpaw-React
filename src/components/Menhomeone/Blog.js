@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
-import Blog1 from '../../assets/images/blog/blog-1-1.jpg';
-import Blog2 from '../../assets/images/blog/blog-1-2.jpg';
-import Blog3 from '../../assets/images/blog/blog-1-3.jpg';
+import Blog1 from '../../assets/images/blog/blog-1.png';
+import Blog2 from '../../assets/images/blog/blog-2.png';
+import Blog3 from '../../assets/images/blog/blog-3.png';
 
 const settings = {
     dots: false,

@@ -1,10 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Bgimg from '../../assets/images/resources/cta-2-2.png'
+import Bgimg from '../../assets/images/resources/cta-2-2.jpg'
 import Ctashape1 from '../../assets/images/shapes/cta-2-shape-1.png'
 import Ctashape2 from '../../assets/images/shapes/cta-2-shape-2.png'
-import Ctasubtitle from '../../assets/images/resources/cta-2-sub-title.png'
-import Ctashape3 from '../../assets/images/shapes/cta-2-1.png'
+import Ctashape3 from '../../assets/images/shapes/Meet-Our-Team.png'
 
 
 function Ctatwo() {
@@ -21,11 +20,8 @@ function Ctatwo() {
                     <div className="row">
                         <div className="col-lg-7 wow fadeInLeft" data-wow-delay="200ms">
                             <div className="cta-two__content">
-                                <div className="cta-two__sub-title">
-                                    <img src={Ctasubtitle} alt="hiredots"/>
-                                </div>
                                 <h2 className="cta-two__title">
-                                    Hire Your Next Candidate on Hiredots
+                                    Hire Your Next Candidate on JOBPAW
                                 </h2>
                                 <Link to="/about" className="hiredots-btn">
                                     <span>Discover more</span>
