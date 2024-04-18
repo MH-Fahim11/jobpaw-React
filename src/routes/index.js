@@ -25,6 +25,8 @@ import Footer from "../components/Footer/Main";
 import SingleUniversity from "../components/ProfessionalItems/SingleUniversity";
 import FindJob from "../components/Professionnels/FindJob";
 import SignleJob from "../components/Professionnels/SignleJob";
+import Testimonial from "../components/Menhomeone/Testimonial";
+import Advertise from "../components/Services/Advertise";
 function index() {
   return (
     <>
@@ -38,11 +40,6 @@ function index() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/services" element={<Services />} />
         <Route path="/service-consulting" element={<ServiceConsulting />} />
-        <Route path="/service-resources" element={<ServiceResources />} />
-        <Route path="/service-hydro" element={<ServiceHydro />} />
-        <Route path="/service-program" element={<ServiceProgram />} />
-        <Route path="/service-training" element={<ServiceTraining />} />
-        <Route path="/service-management" element={<ServiceManagement />} />
         <Route path="/project" element={<Project />} />
         <Route path="/project-details" element={<ProjectDetails />} />
         <Route path="/blog" element={<Blog />} />
@@ -53,6 +50,8 @@ function index() {
         <Route  path="/professionnels/choose-school-or-universiry/:universityId" element={<SingleUniversity />}/>
         <Route  path="/professionnels/find-job" element={<FindJob />}/>
         <Route  path="/professionnels/find-job/:jobId" element={<SignleJob />}/>
+        <Route  path="/testimonials" element={<Testimonial />}/>
+        <Route  path="/services/advertise-on-jobpaw" element={<Advertise />}/>
       </Routes>
       <Footer />
     </>

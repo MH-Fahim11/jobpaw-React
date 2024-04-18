@@ -23,17 +23,17 @@ function Main() {
         } else if (path === "/professionnels" || path === "/professionnels") {
             setmenu({ header: true })
         } 
-        // else if (path === "/pages" || path === "/pages") {
-        //     setmenu({ pages: true })
-        // } else if (path === "/projects" || path === "/projects") {
-        //     setmenu({ projects: true })
-        // } else if (path === "/services" || path === "/services") {
-        //     setmenu({ services: true })
-        // } else if (path === "/blog" || path === "/blog") {
-        //     setmenu({ blog: true })
+        else if (path === "/services" || path === "/services") {
+            setmenu({ pages: true })
+        } else if (path === "/projects" || path === "/projects") {
+            setmenu({ projects: true })
+        } else if (path === "/services" || path === "/services") {
+            setmenu({ services: true })
+        } else if (path === "/blog" || path === "/blog") {
+            setmenu({ blog: true })
 
 
-        // }
+        }
     }
 
 
@@ -142,7 +142,7 @@ function Main() {
                                     <Link to="/">Universities</Link>
                                 </li>
                                 <li className={`dropdown ${menu.home && "current"}`}>
-                                    <Link to="/">Services</Link>
+                                    <Link to="/services">Services</Link>
                                 </li>
                             </ul>
                         </nav>
