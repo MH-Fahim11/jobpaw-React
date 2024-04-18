@@ -1,8 +1,8 @@
 import React from 'react'
 import Slider from 'react-slick';
 import Test1 from '../../assets/images/shapes/testimonail-share.png'
-import Test2 from '../../assets/images/resources/testi-1-1.jpg'
-import Test3 from '../../assets/images/resources/testi-1-2.jpg'
+import Test2 from '../../assets/images/resources/testi-1.png'
+import Test3 from '../../assets/images/resources/testi-2.png'
 
 const Test = {
     margin: 30,
