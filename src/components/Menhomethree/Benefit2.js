@@ -5,7 +5,7 @@ function Benefit2() {
 
     return (
         <>
-            <section className=''>
+            <section className=' benefit2'>
                 <div className="container ">
                     <div className="row">
                         <div className="col-xl-6">

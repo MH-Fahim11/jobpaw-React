@@ -3,12 +3,13 @@ import Header from '../Header/Main'
 import Breadcrumb from '../Breadcrumb/Main'
 import Whychoose from '../Menabout/Whychoose'
 import Testimonial from '../Menhomeone/Testimonial'
-import Ctathree from '../Menabout/Ctathree'
+import Ctathree2 from '../Menabout/Ctathree2'
 import Benefit from '../Menhomethree/Benefit'
 import Team from '../Menabout/Team'
 import Clienttwo from '../Menhometwo/Clienttwo'
 import Footer from '../Footer/Main'
 import Benefit2 from '../Menhomethree/Benefit2'
+import Whychoose2 from '../Menabout/Whychoose2'
 
 function Main() {
     return (
@@ -20,12 +21,12 @@ function Main() {
 
                 <Benefit />
                 <Benefit2/>
-
-                <Testimonial />
-                <Ctathree />
+                <Whychoose2/>
+                {/* <Testimonial /> */}
+                <Ctathree2 />
                 
-                <Team />
-                <Clienttwo />
+                {/* <Team /> */}
+                {/* <Clienttwo /> */}
                 <Footer />
             </div>
         </>
