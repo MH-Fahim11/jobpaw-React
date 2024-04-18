@@ -33,7 +33,7 @@ function Projectone() {
         {
             title:"Trouver un emploi",
             img: Project4,
-            path: "/professionnels/find-job",
+            path: "/professionnels/choose-school-or-universiry",
         },
         {
             title:"Avoir un coaching",
@@ -58,7 +58,7 @@ function Projectone() {
         {
             title:"Consulter travaux recherche",
             img: Project9,
-            path: "/professionnels/consult-research-work",
+            path: "/professionnels/choose-school-or-universiry",
         },
     ]
     return (

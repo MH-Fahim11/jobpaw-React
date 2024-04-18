@@ -15,7 +15,7 @@ function Main() {
     return (
         <>
             <div className="page-wrapper">
-                <Header />
+                {/* <Header /> */}
                 <Breadcrumb subtitle="Home" title="About" />
                 <Whychoose />
 
@@ -27,7 +27,7 @@ function Main() {
                 
                 {/* <Team /> */}
                 {/* <Clienttwo /> */}
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </>
     )

@@ -23,9 +23,10 @@ function Main() {
         } else if (path === "/professionnels" || path === "/professionnels") {
             setmenu({ header: true })
         } 
-        // else if (path === "/pages" || path === "/pages") {
-        //     setmenu({ pages: true })
-        // } else if (path === "/projects" || path === "/projects") {
+        else if (path === "/entreprises" || path === "/entreprises") {
+            setmenu({ pages: true })
+        }
+        //  else if (path === "/projects" || path === "/projects") {
         //     setmenu({ projects: true })
         // } else if (path === "/services" || path === "/services") {
         //     setmenu({ services: true })
@@ -136,7 +137,7 @@ function Main() {
                                     <Link to="/professionnels">Professionels</Link>
                                 </li>
                                 <li className={`dropdown ${menu.home && "current"}`}>
-                                    <Link to="/">Entreprises</Link>
+                                    <Link to="/entreprises">Entreprises</Link>
                                 </li>
                                 <li className={`dropdown ${menu.home && "current"}`}>
                                     <Link to="/">Universities</Link>
@@ -195,7 +196,7 @@ function Main() {
                         </div>
                         <div className="mobile-nav__container">
                             <ul className="main-menu__list">
-                                <li className="dropdown current">
+                                {/* <li className="dropdown current">
                                     <Link to="#" className={homeDrop ? "expanded" : ""}>Home<button aria-label="dropdown toggler" className={homeDrop ? "expanded" : ""} onClick={() => sethomeDrop(homeDrop ? false : true)} ><i className="fa fa-angle-down"></i></button></Link>
                                     {homeDrop &&
                                         <ul style={{ display: "block" }}>
@@ -224,11 +225,23 @@ function Main() {
                                                     </ul>}
                                             </li>
                                         </ul>}
+                                </li> */}
+                                <li className={`dropdown ${menu.home && "current"}`}>
+                                    <Link to="/professionnels">Professionels</Link>
+                                </li>
+                                <li className={`dropdown ${menu.home && "current"}`}>
+                                    <Link to="/entreprises">Entreprises</Link>
+                                </li>
+                                <li className={`dropdown ${menu.home && "current"}`}>
+                                    <Link to="/">Universities</Link>
+                                </li>
+                                <li className={`dropdown ${menu.home && "current"}`}>
+                                    <Link to="/">Services</Link>
                                 </li>
                                 <li>
                                     <Link to="/about">About</Link>
                                 </li>
-                                <li className="dropdown current">
+                                {/* <li className="dropdown current">
                                     <Link to="#" className={pageDrop ? "expanded" : ""}>pages<button aria-label="dropdown toggler" className={pageDrop ? "expanded" : ""} onClick={() => setpageDrop(pageDrop ? false : true)} ><i className="fa fa-angle-down"></i></button></Link>
                                     {pageDrop &&
                                         <ul style={{ display: "block" }}>
@@ -245,8 +258,8 @@ function Main() {
                                                 <Link to="/faq">FAQs</Link>
                                             </li>
                                         </ul>}
-                                </li>
-                                <li className="dropdown">
+                                </li> */}
+                                {/* <li className="dropdown">
                                     <Link to="#" className={servicesDrop ? "expanded" : ""}>Services<button aria-label="dropdown toggler" className={servicesDrop ? "expanded" : ""} onClick={() => setservicesDrop(servicesDrop ? false : true)} ><i className="fa fa-angle-down"></i></button></Link>
                                     {servicesDrop &&
                                         <ul style={{ display: "block" }}>
@@ -307,7 +320,7 @@ function Main() {
                                                 <Link to="/blog-details" onClick={() => setIsDropdownOpen(false)}>News Details</Link>
                                             </li>
                                         </ul>}
-                                </li>
+                                </li> */}
                                 <li>
                                     <Link to="/contact">Contact</Link>
                                 </li>
