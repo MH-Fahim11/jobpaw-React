@@ -20,7 +20,7 @@ function Projectone() {
         {
             title:"Choisir université ou école",
             img: Project2,
-            path: "/",
+            path: "/professionnels/choose-school-or-universiry",
         },
     ]
     return (
