@@ -18,6 +18,7 @@ import ProjectDetails from '../components/ProjectDetails/Main'
 import Blog from '../components/Blog/Main'
 import BlogDetails from '../components/BlogDetails/Main'
 import Contact from '../components/Contact/Main';
+import Professionnels from '../components/Professionnels/Professionnels';
 
 function index() {
     return (
@@ -41,6 +42,7 @@ function index() {
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog-details" element={<BlogDetails />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/professionnels" element={<Professionnels/>} />
             </Routes>
         </>
     )

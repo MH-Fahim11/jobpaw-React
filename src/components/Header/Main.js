@@ -20,19 +20,20 @@ function Main() {
     const activeMenu = () => {
         if (path === "/" || path === "/") {
             setmenu({ home: true })
-        } else if (path === "/header" || path === "/header") {
+        } else if (path === "/professionnels" || path === "/professionnels") {
             setmenu({ header: true })
-        } else if (path === "/pages" || path === "/pages") {
-            setmenu({ pages: true })
-        } else if (path === "/projects" || path === "/projects") {
-            setmenu({ projects: true })
-        } else if (path === "/services" || path === "/services") {
-            setmenu({ services: true })
-        } else if (path === "/blog" || path === "/blog") {
-            setmenu({ blog: true })
+        } 
+        // else if (path === "/pages" || path === "/pages") {
+        //     setmenu({ pages: true })
+        // } else if (path === "/projects" || path === "/projects") {
+        //     setmenu({ projects: true })
+        // } else if (path === "/services" || path === "/services") {
+        //     setmenu({ services: true })
+        // } else if (path === "/blog" || path === "/blog") {
+        //     setmenu({ blog: true })
 
 
-        }
+        // }
     }
 
 
@@ -132,7 +133,7 @@ function Main() {
                         <nav className="main-header__nav main-menu">
                             <ul className="main-menu__list">
                                 <li className={`dropdown ${menu.home && "current"}`}>
-                                    <Link to="/">Professionels</Link>
+                                    <Link to="/professionnels">Professionels</Link>
                                 </li>
                                 <li className={`dropdown ${menu.home && "current"}`}>
                                     <Link to="/">Entreprises</Link>
