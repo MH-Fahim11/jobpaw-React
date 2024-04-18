@@ -9,7 +9,7 @@ function Benefit() {
 
     return (
         <>
-            <section className="features-one about-page--feature " style={{ backgroundImage:`url(${Vdoimg})` }}>
+            <section className="features-one benefit1 about-page--feature " style={{ backgroundImage:`url(${Vdoimg})` }}>
                 <div className="container ">
                     <div className="row">
                         <div className="col-lg-5">
