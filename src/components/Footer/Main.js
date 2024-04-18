@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Bgimg from '../../assets/images/backgrounds/footer-bg.jpg'
-import Logo from '../../assets/images/logo-light.png'
+import Logo from '../../assets/images/logos/logo-light.png'
 import Footeravtar from '../../assets/images/resources/footer-about-avata.png'
 
 function Main() {

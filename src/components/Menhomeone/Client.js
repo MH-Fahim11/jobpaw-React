@@ -34,6 +34,7 @@ function Client() {
         <div>
             <div className="client-carousel ">
                 <div className="container">
+                
                     <div className="row">
                         <div className="col-xl-3">
                             <h3 className="client-carousel__title">

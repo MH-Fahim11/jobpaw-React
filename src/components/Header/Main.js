@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import Logo from '../../assets/images/logo-dark.png'
+import Logo from '../../assets/images/logos/logo-light.png'
 import Logo1 from '../../assets/images/logo-light.png'
 import WOW from 'wowjs'
 
@@ -121,7 +121,7 @@ function Main() {
                 <div className="main-header__inner">
                     <div className="main-header__logo">
                         <Link to="/">
-                            <img src={Logo} alt="Hiredots HTML" width={125} />
+                            <img src={Logo} alt="Hiredots HTML" width={150} />
                         </Link>
                     </div>
                     <Link to="#" className="search-toggler main-header__search" onClick={() => setsearch(true)}>
@@ -132,104 +132,16 @@ function Main() {
                         <nav className="main-header__nav main-menu">
                             <ul className="main-menu__list">
                                 <li className={`dropdown ${menu.home && "current"}`}>
-                                    <Link to="/">Home</Link>
-                                    <ul>
-                                        <li>
-                                            <Link to="/">Home One</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/hometwo">Home Two</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/homethree">Home Three</Link>
-                                        </li>
-                                        <li className={`dropdown ${menu.header && "current"}`}>
-                                            <Link to="/header">Header Styles</Link>
-                                            <ul>
-                                                <li>
-                                                    <Link to="/">Header One</Link>
-                                                </li>
-                                                <li>
-                                                    <Link to="/hometwo">Header Two</Link>
-                                                </li>
-                                                <li>
-                                                    <Link to="/homethree">Header Three</Link>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                    <Link to="/">Professionels</Link>
                                 </li>
-                                <li>
-                                    <Link to="/about">About</Link>
+                                <li className={`dropdown ${menu.home && "current"}`}>
+                                    <Link to="/">Entreprises</Link>
                                 </li>
-                                <li className={`dropdown ${menu.pages && "current"}`}>
-                                    <Link to="#">Pages</Link>
-                                    <ul>
-                                        <li>
-                                            <Link to="/teamdetails">Team Details</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/jobs">Jobs</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/history">History</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/faq">FAQs</Link>
-                                        </li>
-                                    </ul>
+                                <li className={`dropdown ${menu.home && "current"}`}>
+                                    <Link to="/">Universities</Link>
                                 </li>
-                                <li className={`dropdown ${menu.services && "current"}`}>
-                                    <Link to="/services">Services</Link>
-                                    <ul>
-                                        <li>
-                                            <Link to="/services">Services</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/service-consulting">HR Consulting</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/service-resources">Tech Resources</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/service-hydro">Staffing Solution</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/service-program">Corporate Program</Link>
-                                        </li>
-                                        <li>
-                                            {" "}
-                                            <Link to="/service-training">Leadership Training</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/service-management">Staff Management</Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className={`dropdown ${menu.projects && ""}`}>
-                                    <Link to="/project">Projects</Link>
-                                    <ul>
-                                        <li>
-                                            <Link to="/project">Projects</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/project-details">Projects Details</Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li className={`dropdown ${menu.blog && ""}`}>
-                                    <Link to="/blog">News</Link>
-                                    <ul>
-                                        <li>
-                                            <Link to="/blog">News</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/blog-details">News Details</Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <Link to="/contact">Contact</Link>
+                                <li className={`dropdown ${menu.home && "current"}`}>
+                                    <Link to="/">Services</Link>
                                 </li>
                             </ul>
                         </nav>
