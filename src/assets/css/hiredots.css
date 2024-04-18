@@ -3445,9 +3445,6 @@ h6 {
   margin-bottom: 4px;
 }
 
-.main-menu {
-  /* after third level no menu */
-}
 .main-menu .main-menu__list,
 .main-menu .main-menu__list ul {
   margin: 0;
@@ -10648,8 +10645,8 @@ body.megamenu-popup-active .mobile-nav__content {
   overflow: hidden;
 }
 .feature-one__item__img2 img {
-  width: 300px;
-  height: auto;
-  min-height: 320px;
+  width: 250px;
+  height: 300px;
+  min-height: 300px;
   object-fit: cover;
 }

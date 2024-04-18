@@ -8,7 +8,7 @@ function Main() {
     return (
         <>
             <div className="page-wrapper">
-                <Header />
+                {/* <Header /> */}
                 <Breadcrumb subtitle="Home" title="News Details" />
                 <Blogdtlspage />
                 <Footer />
