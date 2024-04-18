@@ -58,7 +58,7 @@ function Projectone() {
         {
             title:"Consulter travaux recherche",
             img: Project9,
-            path: "/professionnels/consult-research-work",
+            path: "/professionnels/choose-school-or-universiry",
         },
     ]
     return (

@@ -23,6 +23,9 @@ import { ChooseUniversity } from "../components/ProfessionalItems/ChooseUniversi
 import Header from "../components/Header/Main";
 import Footer from "../components/Footer/Main";
 import SingleUniversity from "../components/ProfessionalItems/SingleUniversity";
+import Entreprises from "../components/Entreprises/Entreprises";
+
+
 function index() {
   return (
     <>
@@ -49,6 +52,7 @@ function index() {
         <Route path="/professionnels" element={<Professionnels />} />
         <Route path="/professionnels/choose-school-or-universiry" element={<ChooseUniversity />}/>
         <Route  path="/professionnels/choose-school-or-universiry/:universityId" element={<SingleUniversity />}/>
+        <Route  path="/entreprises" element={<Entreprises/>}/>
       </Routes>
       <Footer />
     </>
