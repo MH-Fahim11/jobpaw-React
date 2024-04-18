@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Bgimg from '../../assets/images/backgrounds/footer-bg.jpg'
-import Logo from '../../assets/images/logos/logo-light.png'
-import Footeravtar from '../../assets/images/resources/footer-about-avata.png'
+import Logo from '../../assets/images/logos/logo-for-dark.png'
 
 function Main() {
     return (
@@ -45,21 +44,6 @@ function Main() {
                                         Lorem ipsum dolor sit amet, consect etur adi pisicing elit <br />
                                         sed do eiusmod tempor incididunt ut labore.
                                     </p>
-                                    <div className="footer-widget__author">
-                                        <div className="footer-widget__author__img">
-                                            <img src={Footeravtar} alt=""/>
-                                        </div>
-                                        <div>
-                                            <div className="footer-widget__author__info">
-                                                <span className="footer-widget__author__tagline">
-                                                    Need Help?
-                                                </span>
-                                                <h3 className="footer-widget__author__title">
-                                                    <Link to="/contact">Book Appointment </Link>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <div className="col-md-6 col-xl-2">
@@ -70,16 +54,22 @@ function Main() {
                                             <Link to="/about">About Company</Link>
                                         </li>
                                         <li>
-                                            <Link to="/team">Meet the Team</Link>
+                                            <Link to="/">Trouver un emploi</Link>
                                         </li>
                                         <li>
-                                            <Link to="/blog">News &amp; Media</Link>
+                                            <Link to="/">Creer un CVPaw</Link>
                                         </li>
                                         <li>
-                                            <Link to="/project">Our Projects</Link>
+                                            <Link to="/project">Trouver une formation continue</Link>
                                         </li>
                                         <li>
-                                            <Link to="/contact">Contact</Link>
+                                            <Link to="/contact">Publier une offre d’emploi</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/contact">Temoignages</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/contact">Contactez-nous</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -89,19 +79,22 @@ function Main() {
                                     <h2 className="footer-widget__title">Links</h2>
                                     <ul className="list-unstyled footer-widget__links">
                                         <li>
-                                            <Link to="/about">Apply Now</Link>
+                                            <Link to="/about">Publier un appel d’offre</Link>
                                         </li>
                                         <li>
-                                            <Link to="/contact">Contract to Hire</Link>
+                                            <Link to="/contact">Recruter via Base de CV</Link>
                                         </li>
                                         <li>
-                                            <Link to="/team">Direct Hire</Link>
+                                            <Link to="/team">Statistiques sur le marche de l’emploi</Link>
                                         </li>
                                         <li>
-                                            <Link to="/history">Executive Search</Link>
+                                            <Link to="/history">Partager travaux de recherche</Link>
                                         </li>
                                         <li>
-                                            <Link to="/about">Our Solutions</Link>
+                                            <Link to="/about">Publier une formation continue</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/about">Mettre publicité sur JobPaw</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -148,10 +141,9 @@ function Main() {
                                     <span className="sr-only">Instagram</span>
                                 </Link>
                             </div>
-                            <p className="main-footer__copyright">
-                                © Copyright <span className="dynamic-year" /> by Hiredots HTML
-                                Template.
-                            </p>
+                            {/* <p className="main-footer__copyright">
+                                © Copyright <span className="dynamic-year" /> by JobPaw-2024
+                            </p> */}
                         </div>
                     </div>
                 </div>
