@@ -23,6 +23,8 @@ import { ChooseUniversity } from "../components/ProfessionalItems/ChooseUniversi
 import Header from "../components/Header/Main";
 import Footer from "../components/Footer/Main";
 import SingleUniversity from "../components/ProfessionalItems/SingleUniversity";
+import FindJob from "../components/Professionnels/FindJob";
+import SignleJob from "../components/Professionnels/SignleJob";
 function index() {
   return (
     <>
@@ -49,6 +51,8 @@ function index() {
         <Route path="/professionnels" element={<Professionnels />} />
         <Route path="/professionnels/choose-school-or-universiry" element={<ChooseUniversity />}/>
         <Route  path="/professionnels/choose-school-or-universiry/:universityId" element={<SingleUniversity />}/>
+        <Route  path="/professionnels/find-job" element={<FindJob />}/>
+        <Route  path="/professionnels/find-job/:jobId" element={<SignleJob />}/>
       </Routes>
       <Footer />
     </>
