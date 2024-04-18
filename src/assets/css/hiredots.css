@@ -10643,3 +10643,13 @@ body.megamenu-popup-active .mobile-nav__content {
 .text-left{
   text-align: left;
 }
+.feature-one__item__img2 {
+  position: relative;
+  overflow: hidden;
+}
+.feature-one__item__img2 img {
+  width: 300px;
+  height: auto;
+  min-height: 320px;
+  object-fit: cover;
+}
