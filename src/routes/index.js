@@ -29,6 +29,10 @@ import Testimonial from "../components/Menhomeone/Testimonial";
 import Advertise from "../components/Services/Advertise";
 import Login from "../components/login/Login";
 import Signup from "../components/login/Signup";
+import ReserachPaper from "../components/Professionnels/ReserachPaper";
+import SignleResearchPaper from "../components/Professionnels/SignleResearchPaper";
+
+
 function index() {
   return (
     <>
@@ -56,6 +60,8 @@ function index() {
         <Route  path="/services/advertise-on-jobpaw" element={<Advertise />}/>
         <Route  path="/login" element={<Login />}/>
         <Route  path="/signup" element={<Signup />}/>
+        <Route  path="/professionnels/consult-research-work" element={<ReserachPaper />}/>
+        <Route  path="/professionnels/consult-research-work/:paperId" element={<SignleResearchPaper />}/>
       </Routes>
       <Footer />
     </>
