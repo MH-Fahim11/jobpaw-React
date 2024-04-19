@@ -9,11 +9,9 @@ function Main() {
   return (
     <div>
         <div className="page-wrapper">
-            <Header/>
             <Breadcrumb subtitle="Home" title="Contact" />
             <Contactform/>
-            <Map />
-            <Footer/>
+            {/* <Map /> */}
         </div>
     </div>
   )
