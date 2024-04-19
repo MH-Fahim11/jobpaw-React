@@ -152,8 +152,8 @@ function Main() {
                         </div>
                     </div>
                     <div className="main-header__link">
-                        <Link className="main-header__btn" to="/contact">
-                            Book <br /> Appointment
+                        <Link className="main-header__btn" to="/login">
+                            Login / <br /> Signup
                         </Link>
                     </div>
                     <div className="mobile-nav__btn mobile-nav__toggler" onClick={toggleMobileMenu}>

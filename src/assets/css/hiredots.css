@@ -2411,6 +2411,7 @@ h6 {
 .contact-one__form .bootstrap-select > .dropdown-toggle,
 .contact-one__form input[type=text],
 .contact-one__form input[type=email],
+.contact-one__form input[type=password],
 .contact-one__form textarea {
   padding: 0;
   height: 58px;
