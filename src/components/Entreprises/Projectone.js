@@ -1,63 +1,81 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Project1 from '../../assets/images/professionnels/stat.png';
-import Project2 from '../../assets/images/professionnels/pro.png';
-import Project3 from '../../assets/images/professionnels/cv.png';
-import Project4 from '../../assets/images/professionnels/offreemploi.png';
-import Project5 from '../../assets/images/professionnels/coach.png';
-import Project6 from '../../assets/images/professionnels/seminair.png';
-import Project7 from '../../assets/images/professionnels/creation.png';
-import Project8 from '../../assets/images/professionnels/bourse.png';
-import Project9 from '../../assets/images/professionnels/search.png';
+import Project1 from '../../assets/images/professionnels/bannierepub.png';
+import Project2 from '../../assets/images/professionnels/blastemail.png';
+import Project3 from '../../assets/images/professionnels/seminair.png';
+import Project4 from '../../assets/images/professionnels/bannierepub.png';
+import Project5 from '../../assets/images/professionnels/offreemploi.png';
+import Project6 from '../../assets/images/professionnels/cv.png';
+import Project7 from '../../assets/images/professionnels/headhunter.png';
+import Project8 from '../../assets/images/professionnels/appel.png';
+import Project9 from '../../assets/images/professionnels/formation.png';
+import Project10 from '../../assets/images/professionnels/re.png';
+import Project11 from '../../assets/images/professionnels/search.png';
+import Project12 from '../../assets/images/professionnels/projet.png';
 
 function Projectone() {
     // Array of project image paths
     
     const prolinks = [
         {
-            title:"Voir statistiques opportunités",
+            title:"Publicité via Bannière web",
             img: Project1,
             path: "/",
         },
         {
-            title:"Choisir université ou école",
+            title:"Publicité via Blast e-mail",
             img: Project2,
             path: "/professionnels/choose-school-or-universiry",
         },
         {
-            title:"Créer un CVPaw",
+            title:"Publier un séminaire",
             img: Project3,
             path: "/professionnels/choose-school-or-universiry",
         },
         {
-            title:"Trouver un emploi",
+            title:"Publier un appel d’offres",
             img: Project4,
             path: "/professionnels/choose-school-or-universiry",
         },
         {
-            title:"Avoir un coaching",
+            title:"Publier une offre d’emploi",
             img: Project5,
             path: "/professionnels/choose-school-or-universiry",
         },
         {
-            title:"Trouver formation continue",
+            title:"Recruter via Base de CV",
             img: Project6,
             path: "/professionnels/choose-school-or-universiry",
         },
         {
-            title:"Monter son entreprise",
+            title:"Recruter via Head Hunter",
             img: Project7,
             path: "/professionnels/choose-school-or-universiry",
         },
         {
-            title:"Trouver bourse d’étude",
+            title:"Trouver un appel d’offres",
             img: Project8,
             path: "/professionnels/choose-school-or-universiry",
         },
         {
-            title:"Consulter travaux recherche",
+            title:"Trouver formation continue",
             img: Project9,
+            path: "/professionnels/choose-school-or-universiry",
+        },
+        {
+            title:"Renforcer son entreprise",
+            img: Project10,
+            path: "/professionnels/choose-school-or-universiry",
+        },
+        {
+            title:"Profiter mieux de R&D",
+            img: Project11,
+            path: "/professionnels/choose-school-or-universiry",
+        },
+        {
+            title:"Bénéficier projets du Budget",
+            img: Project12,
             path: "/professionnels/choose-school-or-universiry",
         },
     ]
