@@ -27,6 +27,7 @@ import FindJob from "../components/Professionnels/FindJob";
 import SignleJob from "../components/Professionnels/SignleJob";
 import Testimonial from "../components/Menhomeone/Testimonial";
 import Advertise from "../components/Services/Advertise";
+import CreateCompanyProfile from "../components/Froms/CreateCompanyProfile/CreateCompanyProfile";
 function index() {
   return (
     <>
@@ -52,6 +53,9 @@ function index() {
         <Route  path="/professionnels/find-job/:jobId" element={<SignleJob />}/>
         <Route  path="/testimonials" element={<Testimonial />}/>
         <Route  path="/services/advertise-on-jobpaw" element={<Advertise />}/>
+        <Route  path="/CreateCompanyProfile" element={<CreateCompanyProfile />}/>
+
+
       </Routes>
       <Footer />
     </>
