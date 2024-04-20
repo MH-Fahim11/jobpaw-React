@@ -6,6 +6,7 @@ import Service from "../Menhomeone/Service";
 import Projectone from "../Menhomeone/Projectone";
 import Blog from "../Menhomeone/Blog";
 import Seminer from "../Menhomeone/Seminer";
+import Client from "../Menhomeone/Client";
 
 function Main() {
   return (
@@ -17,6 +18,7 @@ function Main() {
         <Service />
         <Projectone />
         <Seminer />
+        <Client />
         <Blog />
       </div>
     </>

@@ -27,7 +27,16 @@ import FindJob from "../components/Professionnels/FindJob";
 import SignleJob from "../components/Professionnels/SignleJob";
 import Testimonial from "../components/Menhomeone/Testimonial";
 import Advertise from "../components/Services/Advertise";
+
 import CreateCompanyProfile from "../components/Froms/CreateCompanyProfile/CreateCompanyProfile";
+
+import Login from "../components/login/Login";
+import Signup from "../components/login/Signup";
+import ReserachPaper from "../components/Professionnels/ReserachPaper";
+import SignleResearchPaper from "../components/Professionnels/SignleResearchPaper";
+
+
+
 function index() {
   return (
     <>
@@ -53,8 +62,15 @@ function index() {
         <Route  path="/professionnels/find-job/:jobId" element={<SignleJob />}/>
         <Route  path="/testimonials" element={<Testimonial />}/>
         <Route  path="/services/advertise-on-jobpaw" element={<Advertise />}/>
+
         <Route  path="/CreateCompanyProfile" element={<CreateCompanyProfile />}/>
 
+
+
+        <Route  path="/login" element={<Login />}/>
+        <Route  path="/signup" element={<Signup />}/>
+        <Route  path="/professionnels/consult-research-work" element={<ReserachPaper />}/>
+        <Route  path="/professionnels/consult-research-work/:paperId" element={<SignleResearchPaper />}/>
 
       </Routes>
       <Footer />

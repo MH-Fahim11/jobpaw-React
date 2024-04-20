@@ -28,7 +28,7 @@ function Projectone() {
         {
             title:"Créer un CVPaw",
             img: Project3,
-            path: "/professionnels/choose-school-or-universiry",
+            path: "/login",
         },
         {
             title:"Trouver un emploi",
