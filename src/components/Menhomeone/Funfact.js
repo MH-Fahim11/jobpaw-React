@@ -1,98 +1,94 @@
-import React, { useState, useEffect } from 'react';
+import pic_1 from "../../assets/images/5x/7.jpg";
+import pic_2 from "../../assets/images/5x/5.jpg";
+import pic_3 from "../../assets/images/5x/4.jpg";
+import pic_4 from "../../assets/images/5x/3.jpg";
+import pic_5 from "../../assets/images/5x/11.jpg";
+import pic_6 from "../../assets/images/5x/2.jpg";
+import pic_7 from "../../assets/images/5x/15.jpg";
+import pic_8 from "../../assets/images/5x/1.jpg";
+import pic_9 from "../../assets/images/5x/6.jpg";
+import { Link } from "react-router-dom";
+
+const data = [
+  {
+    name: "Publier offre d emploi",
+    image: pic_1,
+    link: "/find-job",
+  },
+  {
+    name: "Publier appel d offres",
+    image: pic_2,
+    link: "/find-job",
+  },
+  {
+    name: "Publier saminaire",
+    image: pic_3,
+    link: "/find-job",
+  },
+  {
+    name: "Recruiter via head Hunter",
+    image: pic_4,
+    link: "/find-job",
+  },
+  {
+    name: "Monter son enterprise",
+    image: pic_5,
+    link: "/find-job",
+  },
+  {
+    name: "Creer un CVpaw",
+    image: pic_6,
+    link: "/find-job",
+  },
+  {
+    name: "Publier Memoire",
+    image: pic_7,
+    link: "/find-job",
+  },
+  {
+    name: "Utiliser JobPaw",
+    image: pic_8,
+    link: "/find-job",
+  },
+  {
+    name: "Statistiques Oppurtunites",
+    image: pic_9,
+    link: "/find-job",
+  },
+];
 
 function Funfact() {
-
-    const initialCounts = {
-        Employer: 0,
-        Job: 0,
-        Success: 0,
-        Coustmer: 0,
-    };
-    const finalCounts = {
-        Employer: 697,
-        Job: 430,
-        Success: 98,
-        Coustmer: 800,
-    };
-
-    const [counts, setCounts] = useState(initialCounts);
-
-    useEffect(() => {
-        const updateCounter = () => {
-            const interval = 10;
-            const timers = Object.keys(finalCounts).map((key) => {
-                const startCount = counts[key];
-                const endCount = finalCounts[key];
-                const step = Math.ceil((endCount - startCount) / (1000 / interval));
-
-                return setInterval(() => {
-                    setCounts((prevCounts) => ({
-                        ...prevCounts,
-                        [key]: Math.min(prevCounts[key] + step, endCount),
-                    }));
-                }, interval);
-            });
-            return () => {
-                timers.forEach((timer) => clearInterval(timer));
-            };
-        };
-        updateCounter();
-    }, []);
-
-    return (
-        <div>
-            <section className="funfact-one">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-3 col-md-6">
-                            <div className="funfact-one__item">
-                                <div className="funfact-one__icon">
-                                    <span className="icon-business-idea" />
-                                </div>
-                                <div className="funfact-one__count count-box">
-                                <span className="count">{counts.Employer}</span>
-                                </div>
-                                <p className="funfact-one__text">Employer Solutions</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div className="funfact-one__item">
-                                <div className="funfact-one__icon">
-                                    <span className="icon-recruit" />
-                                </div>
-                                <div className="funfact-one__count count-box">
-                                <span className="count">{counts.Job}</span>
-                                </div>
-                                <p className="funfact-one__text">People Job Seekers</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div className="funfact-one__item">
-                                <div className="funfact-one__icon">
-                                    <span className="icon-success" />
-                                </div>
-                                <div className="funfact-one__count count-box">
-                                <span className="count">{counts.Success}</span>%
-                                </div>
-                                <p className="funfact-one__text">Success Rates</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div className="funfact-one__item">
-                                <div className="funfact-one__icon">
-                                    <span className="icon-customer-review" />
-                                </div>
-                                <div className="funfact-one__count count-box">
-                                <span className="count">{counts.Coustmer}</span>
-                                </div>
-                                <p className="funfact-one__text">Happy Customers</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    )
+  return (
+    <div className="my-5 container">
+      <div className="sec-title text-center">
+        <h6 className="sec-title__tagline">Services</h6>
+        <h3 className="sec-title__title">How we can help you</h3>
+      </div>
+      <div className="row gutter-y-30">
+        {data.map((item, index) => {
+          return (
+            <Link to="" key={index} className="col-md-6 col-lg-4">
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <img
+                  width={100}
+                  height={100}
+                  src={item?.image}
+                  alt={item.name}
+                />
+              </div>
+              <h4 className="text-center">{item?.name}</h4>
+            </Link>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
-export default Funfact
+export default Funfact;

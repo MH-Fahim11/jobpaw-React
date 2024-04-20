@@ -48,35 +48,56 @@ function Service() {
               Be gladden
             </h3>
           </div>
-          {jobslist.slice(0, 3).map((job, index) => (
-            <div key={index} className="jobs-list__card">
-              <div className="jobs-list__left">
-                <div className="jobs-list__logo">
-                  <img src={job.logo} alt="" />
-                </div>
-                <div className="jobs-list__content">
-                  <span className="jobs-list__time">
-                    <i className="fas fa-clock" /> Posted 3 days ago
-                  </span>
-                  <h3 className="jobs-list__title">{job.title}</h3>
-                  <span className="jobs-list__location">{job.location}</span>
-                </div>
-              </div>
-              <div className="jobs-list__right">
-                <span className="jobs-list__price">
-                  <b>$85,000 - $90,000</b> Per Year
-                </span>
-                <Link
-                  to={`/professionnels/find-job/${createSlug(job?.title)}`}
-                  className="hiredots-btn"
+          <div className="row gutter-y-30">
+            {jobslist.slice(0, 3).map((job, index) => (
+              <div key={index} className="col-md-6 col-lg-4">
+                <div
+                  className="service-one-card service-card-two"
+                  data-wow-duration="1500ms"
+                  data-wow-delay={`${index}ms`}
                 >
-                  View Details
-                </Link>
+                  <div className="service-one-card__image">
+                    <img src={job.image} alt={job.title} />
+                  </div>
+                  <div className="service-one-card__content">
+                    <div style={{display:"flex", justifyContent:"space-between"}} className="service-one-card__icon">
+                      <img style={{width:"50px", height:"50px"}} src={job.logo} alt={job.company} />
+                      <Link to="/services" className="service-one-card__cat">
+                        {job.category}
+                      </Link>
+                    </div>
+                    <h3
+                      style={{ height: "50px" }}
+                      className="service-one-card__title"
+                    >
+                      <Link to={job.link}>{job.title}</Link>
+                    </h3>
+                    <p className="service-one-card__text">
+                      Company: {job.company}
+                    </p>
+                    <p className="service-one-card__text">
+                      Deadline: {job.deadline}
+                    </p>
+                  </div>
+                  <Link
+                    to={`/professionnels/find-job/${createSlug(job?.title)}`}
+                    className="service-one-card__link"
+                  >
+                    Read More
+                    <i className="icon-right-arrow" />
+                  </Link>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-        <div style={{display:"flex", justifyContent:"center", marginTop:"20px"}}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "20px",
+          }}
+        >
           <Link to={`/professionnels/find-job/`} className="hiredots-btn">
             View more jobs
           </Link>
