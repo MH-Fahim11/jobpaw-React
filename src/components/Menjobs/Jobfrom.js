@@ -7,6 +7,7 @@ import Joblogo3 from "../../assets/images/jobs/logo-3.png";
 import Joblogo4 from "../../assets/images/jobs/logo-4.png";
 import Joblogo5 from "../../assets/images/jobs/logo-5.png";
 import jobimage from "../../assets/images/jobs/image-1.png";
+import hiring_image from "../../assets/images/services/sv-2.png";
 
 export const createSlug = (sentence) => {
   return sentence
@@ -20,6 +21,8 @@ export const createSlug = (sentence) => {
 export const jobslist = [
   {
     logo: jobimage,
+    image: hiring_image,
+    category: "Programming & tech",
     title: "Software Engineer Job",
     location: "San Francisco, California",
     salary: "$75000-$90000",
@@ -51,6 +54,8 @@ export const jobslist = [
   },
   {
     logo: jobimage,
+    image: hiring_image,
+    category: "Programming & tech",
     title: "Administrative Coordinator",
     location: "San Francisco, California",
     salary: "$75000-$90000",
@@ -82,6 +87,8 @@ export const jobslist = [
   },
   {
     logo: jobimage,
+    image: hiring_image,
+    category: "Programming & tech",
     title: "Human Resources Manager",
     location: "San Francisco, California",
     salary: "$75000-$90000",
@@ -113,6 +120,8 @@ export const jobslist = [
   },
   {
     logo: jobimage,
+    image: hiring_image,
+    category: "Programming & tech",
     title: "Graphic & Web Designing",
     location: "San Francisco, California",
     salary: "$75000-$90000",
@@ -144,6 +153,8 @@ export const jobslist = [
   },
   {
     logo: jobimage,
+    image: hiring_image,
+    category: "Programming & tech",
     title: "Digital Marketing Assistant",
     location: "San Francisco, California",
     salary: "$75000-$90000",
@@ -176,7 +187,6 @@ export const jobslist = [
 ];
 
 function Jobfrom() {
-
   return (
     <div className="jobs">
       <div className="container">
@@ -216,8 +226,19 @@ function Jobfrom() {
                   <span className="jobs-list__time">
                     <i className="fas fa-clock" /> Posted 3 days ago
                   </span>
-                  <h3 className="jobs-list__title">{job.title}</h3>
-                  <span className="jobs-list__location">{job.location}</span>
+                  <h3
+                    style={{ marginBottom: "10px" }}
+                    className="jobs-list__title"
+                  >
+                    {job.title} <br />{" "}
+                    <span style={{ fontSize: "18px" }}>at {job.company}</span>
+                  </h3>
+                  <span className="jobs-list__location">
+                    Location: {job.location}
+                  </span>
+                  <p className="jobs-list__location">
+                    Deadline: {job.deadline}
+                  </p>
                 </div>
               </div>
               <div className="jobs-list__right">
