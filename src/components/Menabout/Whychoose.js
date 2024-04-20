@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Chooseimg1 from '../../assets/images/resources/about-circle-1.png'
-import Chooseimg2 from '../../assets/images/resources/about-circle-2.png'
+// import Chooseimg1 from '../../assets/images/resources/about-circle-1.png'
+import Chooseimg1 from '../../assets/images/shapes/benefit2.png'
+// import Chooseimg2 from '../../assets/images/resources/about-circle-2.png'
 import ChooseShape from '../../assets/images/shapes/about-circle-shape.png'
 
 function Whychoose() {
@@ -20,7 +21,7 @@ function Whychoose() {
                         <div className="col-xl-6">
                             <div className="why-choose-two__image">
                                 <img src={Chooseimg1} alt="" />
-                                <img src={Chooseimg2} className="why-choose-two__image__two" alt="" />
+                                {/* <img src={Chooseimg2} className="why-choose-two__image__two" alt="" /> */}
                                 <img src={ChooseShape} className="why-choose-two__image__shape" alt="" />
                                 <div className="why-choose-two__circle">
                                     <span className="video-popups">
