@@ -10651,3 +10651,10 @@ body.megamenu-popup-active .mobile-nav__content {
   min-height: 300px;
   object-fit: cover;
 }
+.ReactFlagsSelect-module_selectBtn__19wW7{
+  padding: 0px 10px !important;
+  font-size: 14px !important;
+  color: #000 !important;
+  border: var(--bs-border-width) solid var(--bs-border-color) !important;
+  border-radius: var(--bs-border-radius) !important;
+}
