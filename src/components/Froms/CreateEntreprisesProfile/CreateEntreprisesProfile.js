@@ -6,12 +6,13 @@ import Welcome from './steps/Welcome'
 // import {Button} from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
 
-function CreateCompanyProfile() {
+function CreateEntreprisesProfile() {
     //Steps
   const [activeStep, setActiveStep] = useState(0)
 
   const getSteps = () => {
-    return ["Welcome", "User Details", "Biography", "Confirm"]
+    // return ["Welcome", "User Details", "Biography", "Confirm"]
+    return [ "User Details", "Confirm"]
   }
 
   const steps = getSteps()
@@ -28,6 +29,7 @@ function CreateCompanyProfile() {
 
   //Navigates to the next page
   const handleNext = () => {
+
     setActiveStep((nextStep) => nextStep + 1)
   }
   //Navigates to the Previous page
@@ -40,26 +42,26 @@ function CreateCompanyProfile() {
     setMultiFormValues({...multiFormValues, [input]: e.target.value})
   }
     return (
-        <div>
-      {activeStep === 0 && (
+        <div className="container">
+      {/* {activeStep === 0 && (
         <Welcome handleChange={handleChange} />
+      )} */}
+      {activeStep === 0 && (
+        <UserDetails values={multiFormValues} handleChange={handleChange} handleNext={handleNext} />
       )}
-      {activeStep === 1 && (
-        <UserDetails values={multiFormValues} handleChange={handleChange} />
-      )}
-      {activeStep === 2 && (
+      {/* {activeStep === 1 && (
         <Biography values={multiFormValues} handleChange={handleChange} />
-      )}
-      {activeStep === 3 && (
+      )} */}
+      {activeStep === 1 && (
         <Confirm values={multiFormValues} handleChange={handleChange} />
       )}
 
-      <Button disabled={activeStep === 0} className="mr-5" onClick={handleBack} style={activeStep === 3 ? {display: 'none'} : {}} >Back</Button>
+      {/* <Button disabled={activeStep === 0} className="mr-5 mt-4" onClick={handleBack} style={activeStep === 3 ? {display: 'none'} : {}} >Back</Button>
 
-      <Button className="ml-5" variant="contained" onClick={handleNext} style={activeStep === 3 ? {display: 'none'} : {}} >{}{activeStep === steps.length - 2 ? 'Submit' : 'Next'}</Button>
+      <Button className="ml-5" variant="primary" type="submit" onClick={handleNext} style={activeStep === 3 ? {display: 'none'} : {}} >{}{activeStep === steps.length - 2 ? 'Submit' : 'Next'}</Button> */}
     </div>
 
     );
 }
 
-export default CreateCompanyProfile;
+export default CreateEntreprisesProfile;

@@ -28,13 +28,19 @@ import SignleJob from "../components/Professionnels/SignleJob";
 import Testimonial from "../components/Menhomeone/Testimonial";
 import Advertise from "../components/Services/Advertise";
 
-import CreateCompanyProfile from "../components/Froms/CreateCompanyProfile/CreateCompanyProfile";
+import CreateEntreprisesProfile from "../components/Froms/CreateEntreprisesProfile/CreateEntreprisesProfile";
+import CreateProfessionnelsProfile from "../components/Froms/CreateProfessionnelsProfile/CreateProfessionnelsProfile";
+// import CreateUniversitiesPorfile from "../components/Froms/CreateUniversitiesPorfile/CreateUniversitiesPorfile";
 
 import Login from "../components/login/Login";
 import Signup from "../components/login/Signup";
 import ReserachPaper from "../components/Professionnels/ReserachPaper";
 import SignleResearchPaper from "../components/Professionnels/SignleResearchPaper";
+
+import CreateUniversitiesPorfile from "../components/Froms/CreateUniversitiesPorfile/CreateUniversitiesPorfile";
+
 import Universities from "../components/Universities/Universities";
+
 
 
 
@@ -63,6 +69,13 @@ function index() {
         <Route  path="/professionnels/find-job/:jobId" element={<SignleJob />}/>
         <Route  path="/testimonials" element={<Testimonial />}/>
         <Route  path="/services/advertise-on-jobpaw" element={<Advertise />}/>
+
+        <Route  path="/entreprises/CreateEntreprisesProfile" element={<CreateEntreprisesProfile />}/>
+        <Route  path="/professionnels/CreateProfessionnelsProfile" element={<CreateProfessionnelsProfile />}/>
+        <Route  path="/universities/CreateUniversitiesPorfile" element={<CreateUniversitiesPorfile />}/>
+
+
+
         <Route  path="/CreateCompanyProfile" element={<CreateCompanyProfile />}/>
         <Route  path="/login" element={<Login />}/>
         <Route  path="/signup" element={<Signup />}/>
