@@ -36,7 +36,11 @@ import Login from "../components/login/Login";
 import Signup from "../components/login/Signup";
 import ReserachPaper from "../components/Professionnels/ReserachPaper";
 import SignleResearchPaper from "../components/Professionnels/SignleResearchPaper";
+
 import CreateUniversitiesPorfile from "../components/Froms/CreateUniversitiesPorfile/CreateUniversitiesPorfile";
+
+import Universities from "../components/Universities/Universities";
+
 
 
 
@@ -72,10 +76,12 @@ function index() {
 
 
 
+        <Route  path="/CreateCompanyProfile" element={<CreateCompanyProfile />}/>
         <Route  path="/login" element={<Login />}/>
         <Route  path="/signup" element={<Signup />}/>
         <Route  path="/professionnels/consult-research-work" element={<ReserachPaper />}/>
         <Route  path="/professionnels/consult-research-work/:paperId" element={<SignleResearchPaper />}/>
+        <Route  path="/universities" element={<Universities />}/>
 
       </Routes>
       <Footer />
