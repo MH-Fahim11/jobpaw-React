@@ -70,6 +70,8 @@ function Main() {
       navigate("/login");
     } else if (event.target.value === "Professionnels") {
       navigate("/professionnels");
+    } else if (event.target.value === "Universities") {
+      navigate("/universities");
     }
   };
 
@@ -129,7 +131,7 @@ function Main() {
                   <Link to="/">Entreprises</Link>
                 </li>
                 <li className={`dropdown ${menu.home && "current"}`}>
-                  <Link to="/">Universities</Link>
+                  <Link to="/universities">Universities</Link>
                 </li>
                 <li className={`dropdown ${menu.home && "current"}`}>
                   <Link to="/services">Services</Link>
