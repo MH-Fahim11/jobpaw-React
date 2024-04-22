@@ -7239,7 +7239,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .client-carousel-one .client-carousel__one__item img {
   transition: all 500ms ease;
   opacity: 0.3;
-  max-width: 100%;
+  max-width: 122px;
   width: auto;
 }
 .client-carousel-one .client-carousel__one__item:hover {
