@@ -40,9 +40,8 @@ import SignleResearchPaper from "../components/Professionnels/SignleResearchPape
 import CreateUniversitiesPorfile from "../components/Froms/CreateUniversitiesPorfile/CreateUniversitiesPorfile";
 
 import Universities from "../components/Universities/Universities";
-
-
-
+import SeminerDetails from "../components/SeminerDetails/SeminerDetails";
+import TenderDetails from "../components/TenderDetails/TenderDetails";
 
 function index() {
   return (
@@ -63,26 +62,46 @@ function index() {
         <Route path="/blog-details" element={<BlogDetails />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/professionnels" element={<Professionnels />} />
-        <Route path="/professionnels/choose-school-or-universiry" element={<ChooseUniversity />}/>
-        <Route  path="/professionnels/choose-school-or-universiry/:universityId" element={<SingleUniversity />}/>
-        <Route  path="/professionnels/find-job" element={<FindJob />}/>
-        <Route  path="/professionnels/find-job/:jobId" element={<SignleJob />}/>
-        <Route  path="/testimonials" element={<Testimonial />}/>
-        <Route  path="/services/advertise-on-jobpaw" element={<Advertise />}/>
+        <Route
+          path="/professionnels/choose-school-or-universiry"
+          element={<ChooseUniversity />}
+        />
+        <Route
+          path="/professionnels/choose-school-or-universiry/:universityId"
+          element={<SingleUniversity />}
+        />
+        <Route path="/professionnels/find-job" element={<FindJob />} />
+        <Route path="/professionnels/find-job/:jobId" element={<SignleJob />} />
+        <Route path="/testimonials" element={<Testimonial />} />
+        <Route path="/services/advertise-on-jobpaw" element={<Advertise />} />
 
-        <Route  path="/entreprises/CreateEntreprisesProfile" element={<CreateEntreprisesProfile />}/>
-        <Route  path="/professionnels/CreateProfessionnelsProfile" element={<CreateProfessionnelsProfile />}/>
-        <Route  path="/universities/CreateUniversitiesPorfile" element={<CreateUniversitiesPorfile />}/>
-
-
+        <Route
+          path="/entreprises/CreateEntreprisesProfile"
+          element={<CreateEntreprisesProfile />}
+        />
+        <Route
+          path="/professionnels/CreateProfessionnelsProfile"
+          element={<CreateProfessionnelsProfile />}
+        />
+        <Route
+          path="/universities/CreateUniversitiesPorfile"
+          element={<CreateUniversitiesPorfile />}
+        />
 
         {/* <Route  path="/CreateCompanyProfile" element={<CreateCompanyProfile />}/> */}
-        <Route  path="/login" element={<Login />}/>
-        <Route  path="/signup" element={<Signup />}/>
-        <Route  path="/professionnels/consult-research-work" element={<ReserachPaper />}/>
-        <Route  path="/professionnels/consult-research-work/:paperId" element={<SignleResearchPaper />}/>
-        <Route  path="/universities" element={<Universities />}/>
-
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route
+          path="/professionnels/consult-research-work"
+          element={<ReserachPaper />}
+        />
+        <Route
+          path="/professionnels/consult-research-work/:paperId"
+          element={<SignleResearchPaper />}
+        />
+        <Route path="/seminars/:id" element={<SeminerDetails />} />
+        <Route path="/tenders/:id" element={<TenderDetails />} />
+        <Route path="/universities" element={<Universities />} />
       </Routes>
       <Footer />
     </>
