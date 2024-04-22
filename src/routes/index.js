@@ -40,6 +40,7 @@ import SignleResearchPaper from "../components/Professionnels/SignleResearchPape
 import CreateUniversitiesPorfile from "../components/Froms/CreateUniversitiesPorfile/CreateUniversitiesPorfile";
 
 import Universities from "../components/Universities/Universities";
+import Entreprises from "../components/Entreprises/Entreprises";
 
 
 
@@ -69,7 +70,7 @@ function index() {
         <Route  path="/professionnels/find-job/:jobId" element={<SignleJob />}/>
         <Route  path="/testimonials" element={<Testimonial />}/>
         <Route  path="/services/advertise-on-jobpaw" element={<Advertise />}/>
-
+        <Route  path="/entreprises" element={<Entreprises/>}/>
         <Route  path="/entreprises/CreateEntreprisesProfile" element={<CreateEntreprisesProfile />}/>
         <Route  path="/professionnels/CreateProfessionnelsProfile" element={<CreateProfessionnelsProfile />}/>
         <Route  path="/universities/CreateUniversitiesPorfile" element={<CreateUniversitiesPorfile />}/>

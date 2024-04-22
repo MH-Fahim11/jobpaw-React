@@ -7071,13 +7071,13 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .page-header__bg {
   position: absolute;
-  top: 0;
+  top: -100px;
   left: 0;
   right: 0;
   bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/backgrounds/page-header-bg-1-1.jpg);
+  background-image: url(../images/34FinalPhotos/IMG-20240320-WA0039.jpg);
   z-index: -1;
 }
 .page-header__shape {
