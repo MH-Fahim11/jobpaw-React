@@ -128,7 +128,7 @@ function Main() {
                   <Link to="/professionnels">Professionels</Link>
                 </li>
                 <li className={`dropdown ${menu.home && "current"}`}>
-                  <Link to="/">Entreprises</Link>
+                  <Link to="/entreprises">Entreprises</Link>
                 </li>
                 <li className={`dropdown ${menu.home && "current"}`}>
                   <Link to="/universities">Universities</Link>
