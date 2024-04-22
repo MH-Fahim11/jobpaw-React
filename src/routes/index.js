@@ -76,7 +76,7 @@ function index() {
 
 
 
-        <Route  path="/CreateCompanyProfile" element={<CreateCompanyProfile />}/>
+        {/* <Route  path="/CreateCompanyProfile" element={<CreateCompanyProfile />}/> */}
         <Route  path="/login" element={<Login />}/>
         <Route  path="/signup" element={<Signup />}/>
         <Route  path="/professionnels/consult-research-work" element={<ReserachPaper />}/>

@@ -13,17 +13,17 @@ const data = [
   {
     name: "Publier offre d emploi",
     image: pic_1,
-    link: "/find-job",
+    link: "/professionnels/find-job",
   },
   {
     name: "Publier appel d offres",
     image: pic_2,
-    link: "/find-job",
+    link: "/professionnels",
   },
   {
     name: "Publier saminaire",
     image: pic_3,
-    link: "/find-job",
+    link: "/projets",
   },
   {
     name: "Recruiter via head Hunter",
@@ -67,7 +67,7 @@ function Funfact() {
       <div className="row gutter-y-30">
         {data.map((item, index) => {
           return (
-            <Link to="" key={index} className="col-md-6 col-lg-4">
+            <Link to={item.link} key={index} className="col-md-6 col-lg-4">
               <div
                 style={{
                   display: "flex",
