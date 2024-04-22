@@ -28,32 +28,12 @@ const data = [
   {
     name: "Recruiter via head Hunter",
     image: pic_4,
-    link: "/find-job",
+    link: "/services",
   },
   {
     name: "Monter son enterprise",
     image: pic_5,
-    link: "/find-job",
-  },
-  {
-    name: "Creer un CVpaw",
-    image: pic_6,
-    link: "/find-job",
-  },
-  {
-    name: "Publier Memoire",
-    image: pic_7,
-    link: "/find-job",
-  },
-  {
-    name: "Utiliser JobPaw",
-    image: pic_8,
-    link: "/find-job",
-  },
-  {
-    name: "Statistiques Oppurtunites",
-    image: pic_9,
-    link: "/find-job",
+    link: "/enterprises",
   },
 ];
 
@@ -64,10 +44,10 @@ function Funfact() {
         <h6 className="sec-title__tagline">Services</h6>
         <h3 className="sec-title__title">How we can help you</h3>
       </div>
-      <div className="row gutter-y-30">
+      <div className="d-flex" style={{gap:"10px", justifyContent:"space-between"}}>
         {data.map((item, index) => {
           return (
-            <Link to={item.link} key={index} className="col-md-6 col-lg-4">
+            <Link to={item.link} key={index} className="">
               <div
                 style={{
                   display: "flex",
