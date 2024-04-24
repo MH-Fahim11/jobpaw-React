@@ -46,7 +46,7 @@ function Projectone() {
         {
             title:"Recruter via Base de CV",
             img: Project6,
-            path: "/professionnels/choose-school-or-universiry",
+            path: "/entreprises/recruter-via-base-de-cv",
         },
         {
             title:"Recruter via Head Hunter",
