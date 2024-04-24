@@ -43,7 +43,7 @@ function Projectone() {
         {
             title:"Trouver formation continue",
             img: Project6,
-            path: "/professionnels/choose-school-or-universiry",
+            path: "/professionnels/seminer",
         },
         {
             title:"Monter son entreprise",

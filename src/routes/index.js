@@ -39,6 +39,8 @@ import Universities from "../components/Universities/Universities";
 import SeminerDetails from "../components/SeminerDetails/SeminerDetails";
 import TenderDetails from "../components/TenderDetails/TenderDetails";
 import Entreprises from "../components/Entreprises/Entreprises";
+import Seminer from "../components/Professionnels/Seminer";
+import RecruterViaBaseDeCV from "../components/Entreprises/RecruterViaBaseDeCV";
 
 
 function index() {
@@ -73,6 +75,7 @@ function index() {
         <Route  path="/testimonials" element={<Testimonial />}/>
         <Route  path="/services/advertise-on-jobpaw" element={<Advertise />}/>
         <Route  path="/entreprises" element={<Entreprises/>}/>
+        <Route  path="/entreprises/recruter-via-base-de-cv" element={<RecruterViaBaseDeCV/>}/>
         <Route  path="/entreprises/CreateEntreprisesProfile" element={<CreateEntreprisesProfile />}/>
         <Route  path="/professionnels/CreateProfessionnelsProfile" element={<CreateProfessionnelsProfile />}/>
         <Route  path="/universities/CreateUniversitiesPorfile" element={<CreateUniversitiesPorfile />}/>
@@ -96,6 +99,10 @@ function index() {
         <Route
           path="/professionnels/consult-research-work"
           element={<ReserachPaper />}
+        />
+        <Route
+          path="/professionnels/seminer"
+          element={<Seminer />}
         />
         <Route
           path="/professionnels/consult-research-work/:paperId"

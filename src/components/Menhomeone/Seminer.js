@@ -43,7 +43,7 @@ const Seminer = () => {
           <h3 className="sec-title__title">Join free seminers</h3>
         </div>
         <div className="row gutter-y-30">
-          {seminarItems.map((service, index) => (
+          {seminarItems.slice(0,3).map((service, index) => (
             <div key={index} className="col-md-6 col-lg-4">
               <div
                 className="service-one-card service-card-two"
@@ -56,7 +56,7 @@ const Seminer = () => {
                 ></div>
                 <div className="service-one-card__content">
                   <h3 className="service-one-card__title">
-                    <Link to={service.link}>{service.title}</Link>
+                    {service.title}
                   </h3>
                   <p className="service-one-card__text">
                     {service.description.slice(0,70)}...
