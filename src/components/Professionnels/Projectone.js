@@ -96,7 +96,7 @@ function Projectone() {
                   </div>
                   <div className="feature-one__item__content">
                     <div className="feature-one__item__ball" />
-                    <div>
+                    <div className="feature-one__item__icon">
                       <img className="rounded-circle" width={100} height={100} src={feature.icon} alt="icon"/>
                     </div>
                     <h3 className="feature-one__item__title">
