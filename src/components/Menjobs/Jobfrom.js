@@ -8,6 +8,8 @@ import Joblogo4 from "../../assets/images/jobs/logo-4.png";
 import Joblogo5 from "../../assets/images/jobs/logo-5.png";
 import jobimage from "../../assets/images/jobs/image-1.png";
 import hiring_image from "../../assets/images/services/sv-2.png";
+import img1 from '../../assets/images/34FinalPhotos/IMG-20240320-WA0018.jpg'
+import img2 from '../../assets/images/34FinalPhotos/IMG-20240320-WA0038.jpg'
 
 export const createSlug = (sentence) => {
   return sentence
@@ -21,7 +23,7 @@ export const createSlug = (sentence) => {
 export const jobslist = [
   {
     logo: jobimage,
-    image: hiring_image,
+    image: img1,
     category: "Programming & tech",
     title: "Software Engineer Job",
     location: "San Francisco, California",
@@ -54,7 +56,7 @@ export const jobslist = [
   },
   {
     logo: jobimage,
-    image: hiring_image,
+    image: img2,
     category: "Programming & tech",
     title: "Administrative Coordinator",
     location: "San Francisco, California",
@@ -87,7 +89,7 @@ export const jobslist = [
   },
   {
     logo: jobimage,
-    image: hiring_image,
+    image: img1,
     category: "Programming & tech",
     title: "Human Resources Manager",
     location: "San Francisco, California",
@@ -120,7 +122,7 @@ export const jobslist = [
   },
   {
     logo: jobimage,
-    image: hiring_image,
+    image: img1,
     category: "Programming & tech",
     title: "Graphic & Web Designing",
     location: "San Francisco, California",
@@ -153,7 +155,7 @@ export const jobslist = [
   },
   {
     logo: jobimage,
-    image: hiring_image,
+    image: img1,
     category: "Programming & tech",
     title: "Digital Marketing Assistant",
     location: "San Francisco, California",

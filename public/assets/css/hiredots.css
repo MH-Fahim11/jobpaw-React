@@ -9313,7 +9313,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .service-one-card__image img {
   max-width: 370px;
   width: 100%;
-  height: auto;
+  height: 350px;
 }
 .service-one-card__icon {
   display: flex;

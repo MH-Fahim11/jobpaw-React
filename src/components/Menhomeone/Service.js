@@ -1,37 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Bgimg from "../../assets/images/shapes/service-bg-1.jpg";
-import Service1 from "../../assets/images/services/sv-1.png";
-import Service2 from "../../assets/images/services/sv-2.png";
-import Service3 from "../../assets/images/services/sv-3.png";
 import { createSlug, jobslist } from "../Menjobs/Jobfrom";
 
-const services = [
-  {
-    image: Service1,
-    icon: "icon-consulting",
-    company: "Tiger IT",
-    title: "HR Consulting",
-    link: "/service-consulting",
-    text: "Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod",
-  },
-  {
-    image: Service2,
-    icon: "icon-controller",
-    company: "Brain station",
-    title: "Technical operator",
-    link: "/service-resources",
-    text: "Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod",
-  },
-  {
-    image: Service2,
-    icon: "icon-policy",
-    company: "Enosis solution",
-    title: "Frontend developer",
-    link: "/service-resources",
-    text: "Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod",
-  },
-];
+
 
 function Service() {
   return (
