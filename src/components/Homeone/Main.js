@@ -7,6 +7,7 @@ import Projectone from "../Menhomeone/Projectone";
 import Blog from "../Menhomeone/Blog";
 import Seminer from "../Menhomeone/Seminer";
 import Client from "../Menhomeone/Client";
+import Whychoose from "../Menabout/Whychoose";
 
 function Main() {
   return (
@@ -20,6 +21,7 @@ function Main() {
         <Seminer />
         <Client />
         <Blog />
+        <Whychoose />
       </div>
     </>
   );
