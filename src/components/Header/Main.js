@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Logo from "../../assets/images/logos/logo-light.png";
-import Logo1 from "../../assets/images/logo-light.png";
+import Logo1 from "../../assets/images/logos/logo-for-dark.png";
 import WOW from "wowjs";
 
 function Main() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [homeDrop, sethomeDrop] = useState(false);
-  const [headerDrop, setheaderDrop] = useState(false);
-  const [pageDrop, setpageDrop] = useState(false);
-  const [servicesDrop, setservicesDrop] = useState(false);
-  const [projectsDrop, setprojectsDrop] = useState(false);
-  const [blogDrop, setblogDrop] = useState(false);
+  // const [homeDrop, sethomeDrop] = useState(false);
+  // const [headerDrop, setheaderDrop] = useState(false);
+  // const [pageDrop, setpageDrop] = useState(false);
+  // const [servicesDrop, setservicesDrop] = useState(false);
+  // const [projectsDrop, setprojectsDrop] = useState(false);
+  // const [blogDrop, setblogDrop] = useState(false);
   const [search, setsearch] = useState(false);
   const location = useLocation();
   const path = location.pathname;
@@ -58,9 +58,9 @@ function Main() {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  const closeMenu = () => {
-    setMobileMenuOpen(false);
-  };
+  // const closeMenu = () => {
+  //   setMobileMenuOpen(false);
+  // };
   const [selectedValue, setSelectedValue] = useState("");
   const navigate = useNavigate();
 
