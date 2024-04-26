@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import { createSlug } from "../Menjobs/Jobfrom";
 
-const seminarItems = [
+export const seminarItems = [
   {
     id: 1,
     title: "Introduction to Data Science Workshop",
     description:
-      "Join us for a hands-on workshop covering the basics of data science...",
+      "TechMaster Bootcamp is an intensive training program designed to equip participants with the skills and knowledge needed to excel in the rapidly evolving field of technology. Whether you're a beginner looking to kickstart your career or a seasoned professional aiming to enhance your expertise, our bootcamp offers a comprehensive curriculum tailored to meet your needs.",
     date: "May 10, 2024",
     time: "10:00 AM - 4:00 PM",
     location: "123 Main Street, Cityville",
@@ -42,28 +43,40 @@ const Seminer = () => {
           <h3 className="sec-title__title">Join free seminers</h3>
         </div>
         <div className="row gutter-y-30">
-          {seminarItems.map((service, index) => (
+          {seminarItems.slice(0,3).map((service, index) => (
             <div key={index} className="col-md-6 col-lg-4">
               <div
                 className="service-one-card service-card-two"
                 data-wow-duration="1500ms"
                 data-wow-delay={`${index}ms`}
               >
-                <div className="service-one-card__image" style={{paddingBottom:"10px"}}>
-                </div>
+                <div
+                  className="service-one-card__image"
+                  style={{ paddingBottom: "10px" }}
+                ></div>
                 <div className="service-one-card__content">
                   <h3 className="service-one-card__title">
-                    <Link to={service.link}>{service.title}</Link>
+                    {service.title}
                   </h3>
                   <p className="service-one-card__text">
-                    {service.description}
+                    {service.description.slice(0,70)}...
                   </p>
-                  <div style={{marginTop:"10px", display:"flex", flexDirection:"column", gap:"5px"}}>
+                  <div
+                    style={{
+                      marginTop: "10px",
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "5px",
+                    }}
+                  >
                     <span>Date: {service.date}</span>
                     <span>Time: {service.time}</span>
                   </div>
                 </div>
-                <Link to={service.link} className="service-one-card__link">
+                <Link
+                  to={`/seminars/${createSlug(service.title)}`}
+                  className="service-one-card__link"
+                >
                   Book now
                   <i className="icon-right-arrow" />
                 </Link>
