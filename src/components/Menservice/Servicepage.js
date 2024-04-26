@@ -18,7 +18,7 @@ function Servicepage() {
     {
       image: Service2,
       title: "Contactez-nous",
-      path: "/contact",
+      path: "/professionnels/cv-paw",
     },
     {
       image: Service3,

@@ -45,19 +45,19 @@ function Projectone() {
         {
             title:"Publier un séminaire",
             img: Project3,
-            path: "/professionnels/choose-school-or-universiry",
+            path: "/professionnels/cv-paw",
             icon: icon3
         },
         {
             title:"Publier un appel d’offres",
             img: Project4,
-            path: "/professionnels/choose-school-or-universiry",
+            path: "/professionnels/cv-paw",
             icon: icon4
         },
         {
             title:"Publier une offre d’emploi",
             img: Project5,
-            path: "/professionnels/choose-school-or-universiry",
+            path: "/professionnels/cv-paw",
             icon: icon5
         },
         {

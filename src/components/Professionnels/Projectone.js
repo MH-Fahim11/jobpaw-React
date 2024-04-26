@@ -39,7 +39,7 @@ function Projectone() {
     {
       title: "Créer un CVPaw",
       img: Project3,
-      path: "/login",
+      path: "/professionnels/cv-paw",
       icon: icon3,
     },
     {
