@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
 // Import job logos
-import Joblogo1 from "../../assets/images/jobs/logo-1.png";
-import Joblogo2 from "../../assets/images/jobs/logo-2.png";
-import Joblogo3 from "../../assets/images/jobs/logo-3.png";
-import Joblogo4 from "../../assets/images/jobs/logo-4.png";
-import Joblogo5 from "../../assets/images/jobs/logo-5.png";
+// import Joblogo1 from "../../assets/images/jobs/logo-1.png";
+// import Joblogo2 from "../../assets/images/jobs/logo-2.png";
+// import Joblogo3 from "../../assets/images/jobs/logo-3.png";
+// import Joblogo4 from "../../assets/images/jobs/logo-4.png";
+// import Joblogo5 from "../../assets/images/jobs/logo-5.png";
 import jobimage from "../../assets/images/jobs/image-1.png";
-import hiring_image from "../../assets/images/services/sv-2.png";
+// import hiring_image from "../../assets/images/services/sv-2.png";
 import img1 from '../../assets/images/34FinalPhotos/IMG-20240320-WA0018.jpg'
 import img2 from '../../assets/images/34FinalPhotos/IMG-20240320-WA0038.jpg'
 
