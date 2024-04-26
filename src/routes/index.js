@@ -41,6 +41,7 @@ import TenderDetails from "../components/TenderDetails/TenderDetails";
 import Entreprises from "../components/Entreprises/Entreprises";
 import Seminer from "../components/Professionnels/Seminer";
 import RecruterViaBaseDeCV from "../components/Entreprises/RecruterViaBaseDeCV";
+import CareerUnCVpaw from "../components/Professionnels/CareerUnCVpaw";
 
 
 function index() {
@@ -63,6 +64,7 @@ function index() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/professionnels" element={<Professionnels />} />
         <Route path="/professionnels/choose-school-or-universiry" element={<ChooseUniversity />}/>
+        <Route path="/professionnels/cv-paw" element={<CareerUnCVpaw />}/>
         <Route path="/professionnels/choose-school-or-universiry/:universityId" element={<SingleUniversity />}/>
         <Route path="/professionnels/find-job" element={<FindJob />} />
         <Route path="/professionnels/find-job/:jobId" element={<SignleJob />} />
