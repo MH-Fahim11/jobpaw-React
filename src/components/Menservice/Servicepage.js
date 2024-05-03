@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Service1 from "../../assets/images/services/about.png";
-import Service2 from "../../assets/images/services/contact.png";
-import Service3 from "../../assets/images/services/faq.png";
-import Service4 from "../../assets/images/services/forum.png";
-import Service5 from "../../assets/images/services/bannierepub.png";
-import Service6 from "../../assets/images/services/creation.png";
+import Service1 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0036.jpg";
+import Service2 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0038.jpg";
+import Service3 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0039.jpg";
+import Service4 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0042.jpg";
+import Service5 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0045.jpg";
+import Service6 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0046.jpg";
 
 function Servicepage() {
   const services = [

@@ -9,17 +9,27 @@ const Seminer = () => {
       <Breadcrumb subtitle="Home / Professionnels " title=" Seminer" />
       <div className="container my-5">
         <div className="sec-title">
-        Les professionnels et les entreprises ont accès à différentes informations (offres d’emploi, statistiques sur l’emploi, potentialités du pays, projets du budget, etc.) pour choisir et offrir des formations continues adaptées.  <br/><br/>
-
-Ce répertoire de toutes les formations continues et séminaires offerts en Haïti les aide à élaborer un plan de formation et un plan de développement personnel. <br/> <br/>
-
-Ils auront à l’avance un calendrier de toutes les formations et peuvent plus facilement participer. Ce qui augmentera, du coup, la visibilité et la rentabilité des formations. <br/> <br/>
-
-Vous pourrez leur donner cette opportunité <Link to="/login"> en cliquant ici </Link> et en publiant vos séminaires et formations continues dans notre répertoire. <br/>
+          Les professionnels et les entreprises ont accès à différentes
+          informations (offres d’emploi, statistiques sur l’emploi,
+          potentialités du pays, projets du budget, etc.) pour choisir et offrir
+          des formations continues adaptées. <br />
+          <br />
+          Ce répertoire de toutes les formations continues et séminaires offerts
+          en Haïti les aide à élaborer un plan de formation et un plan de
+          développement personnel. <br /> <br />
+          Ils auront à l’avance un calendrier de toutes les formations et
+          peuvent plus facilement participer. Ce qui augmentera, du coup, la
+          visibilité et la rentabilité des formations. <br /> <br />
+          Vous pourrez leur donner cette opportunité{" "}
+          <Link to="/login"> en cliquant ici </Link> et en publiant vos
+          séminaires et formations continues dans notre répertoire. <br />
         </div>
         <div className="row gutter-y-30">
           {seminarItems.map((service, index) => (
             <div key={index} className="col-md-6 col-lg-4">
+              <div className="service-one-card__image">
+                <img src={service.image} alt={service.title} />
+              </div>
               <div
                 className="service-one-card service-card-two"
                 data-wow-duration="1500ms"

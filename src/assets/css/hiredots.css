@@ -3133,7 +3133,7 @@ h6 {
   background-color: var(--hiredots-base, #00cde5);
   display: inline-block;
   color: var(--hiredots-white, #fff);
-  padding: 38px 90px;
+  padding: 20px 40px;
   display: none;
 }
 .main-header__btn:hover {

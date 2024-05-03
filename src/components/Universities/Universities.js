@@ -1,9 +1,9 @@
-import img1 from "../../assets/images/universities/formation.png";
-import img2 from "../../assets/images/universities/seminaire.png";
-import img3 from "../../assets/images/universities/inovation.png";
-import img4 from "../../assets/images/universities/diplome.png";
-import img5 from "../../assets/images/universities/memoire.png";
-import img6 from "../../assets/images/universities/creation.png";
+import img1 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0025.jpg";
+import img2 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0026.jpg";
+import img3 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0027.jpg";
+import img4 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0029.jpg";
+import img5 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0031.jpg";
+import img6 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0035.jpg";
 import { Link } from "react-router-dom";
 import Breadcrumb from "../Breadcrumb/Main";
 

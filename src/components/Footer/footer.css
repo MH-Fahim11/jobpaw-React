@@ -1,0 +1,28 @@
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1.9fr 1.5fr 2.5fr;
+  gap: 20px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For small screens */
+@media screen and (max-width: 767px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For medium screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+
+/* For large screens */
+@media screen and (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+  }
+}

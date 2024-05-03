@@ -1,24 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Project1 from "../../assets/images/professionnels/stat.png";
-import Project2 from "../../assets/images/professionnels/pro.png";
-import Project3 from "../../assets/images/professionnels/cv.png";
-import Project4 from "../../assets/images/professionnels/offreemploi.png";
-import Project5 from "../../assets/images/professionnels/coach.png";
-import Project6 from "../../assets/images/professionnels/seminair.png";
-import Project7 from "../../assets/images/professionnels/creation.png";
-import Project8 from "../../assets/images/professionnels/bourse.png";
-import Project9 from "../../assets/images/professionnels/search.png";
-import icon1 from '../../assets/images/5x/1.jpg'
-import icon2 from '../../assets/images/5x/2.jpg'
-import icon3 from '../../assets/images/5x/5.jpg'
-import icon4 from '../../assets/images/5x/7.jpg'
-import icon5 from '../../assets/images/5x/8.jpg'
-import icon6 from '../../assets/images/5x/9.jpg'
-import icon7 from '../../assets/images/5x/10.jpg'
-import icon8 from '../../assets/images/5x/11.jpg'
-import icon9 from '../../assets/images/5x/12.jpg'
+import Project1 from "../../assets/images/34FinalPhotos/IMG-20240409-WA0000.jpg";
+import Project2 from "../../assets/images/34FinalPhotos/IMG-20240408-WA0005.jpg";
+import Project3 from "../../assets/images/34FinalPhotos/IMG-20240408-WA0004.jpg";
+import Project4 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0054.jpg";
+import Project5 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0052.jpg";
+import Project6 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0039.jpg";
+import Project7 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0036.jpg";
+import Project8 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0027.jpg";
+import Project9 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0015.jpg";
+import icon1 from "../../assets/images/5x/1.jpg";
+import icon2 from "../../assets/images/5x/2.jpg";
+import icon3 from "../../assets/images/5x/5.jpg";
+import icon4 from "../../assets/images/5x/7.jpg";
+import icon5 from "../../assets/images/5x/8.jpg";
+import icon6 from "../../assets/images/5x/9.jpg";
+import icon7 from "../../assets/images/5x/10.jpg";
+import icon8 from "../../assets/images/5x/11.jpg";
+import icon9 from "../../assets/images/5x/12.jpg";
 
 function Projectone() {
   // Array of project image paths
@@ -97,7 +97,13 @@ function Projectone() {
                   <div className="feature-one__item__content">
                     <div className="feature-one__item__ball" />
                     <div className="feature-one__item__icon">
-                      <img className="rounded-circle" width={100} height={100} src={feature.icon} alt="icon"/>
+                      <img
+                        className="rounded-circle"
+                        width={100}
+                        height={100}
+                        src={feature.icon}
+                        alt="icon"
+                      />
                     </div>
                     <h3 className="feature-one__item__title">
                       {feature.title}

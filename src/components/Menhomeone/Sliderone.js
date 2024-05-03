@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import Slidershape2 from '../../assets/images/shapes/slider-1-shape-2.png'
 import Bgimg from '../../assets/images/34FinalPhotos/IMG-20240320-WA0038.jpg'
-import Bgimg1 from '../../assets/images/34FinalPhotos/IMG-20240320-WA0031.jpg'
 import Bgimg2 from '../../assets/images/34FinalPhotos/IMG-20240320-WA0035.jpg'
 import Bgimg3 from '../../assets/images/34FinalPhotos/IMG-20240320-WA0042.jpg'
 
@@ -22,7 +21,6 @@ function Sliderone() {
                         <div className="main-slider-one__item">
                             <div className="main-slider-one__bg" style={{ backgroundImage: `url(${Bgimg})` }}/>
                             <div className="main-slider-one__overlay" />
-                            <div className="main-slider-one__shape" style={{ backgroundImage: `url(${Bgimg1})` }}/>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-md-12">  
@@ -50,7 +48,6 @@ function Sliderone() {
                         <div className="main-slider-one__item">
                             <div className="main-slider-one__bg" style={{ backgroundImage: `url(${Bgimg2})` }}/>
                             <div className="main-slider-one__overlay" />
-                            <div className="main-slider-one__shape" style={{ backgroundImage: `url(${Bgimg1})` }}/>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-md-12">
@@ -78,7 +75,6 @@ function Sliderone() {
                         <div className="main-slider-one__item">
                             <div className="main-slider-one__bg"style={{ backgroundImage: `url(${Bgimg3})`}}/>
                             <div className="main-slider-one__overlay" /> 
-                            <div className="main-slider-one__shape" style={{ backgroundImage: `url(${Bgimg1})` }}/>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-md-12">

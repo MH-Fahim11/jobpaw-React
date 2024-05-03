@@ -43,7 +43,6 @@ import Seminer from "../components/Professionnels/Seminer";
 import RecruterViaBaseDeCV from "../components/Entreprises/RecruterViaBaseDeCV";
 import CareerUnCVpaw from "../components/Professionnels/CareerUnCVpaw";
 
-
 function index() {
   return (
     <>
@@ -63,24 +62,48 @@ function index() {
         <Route path="/blog-details" element={<BlogDetails />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/professionnels" element={<Professionnels />} />
-        <Route path="/professionnels/choose-school-or-universiry" element={<ChooseUniversity />}/>
-        <Route path="/professionnels/cv-paw" element={<CareerUnCVpaw />}/>
-        <Route path="/professionnels/choose-school-or-universiry/:universityId" element={<SingleUniversity />}/>
+        <Route
+          path="/professionnels/choose-school-or-universiry"
+          element={<ChooseUniversity />}
+        />
+        <Route path="/professionnels/cv-paw" element={<CareerUnCVpaw />} />
+        <Route
+          path="/professionnels/choose-school-or-universiry/:universityId"
+          element={<SingleUniversity />}
+        />
         <Route path="/professionnels/find-job" element={<FindJob />} />
         <Route path="/professionnels/find-job/:jobId" element={<SignleJob />} />
         <Route path="/testimonials" element={<Testimonial />} />
         <Route path="/services/advertise-on-jobpaw" element={<Advertise />} />
-        <Route path="/professionnels/choose-school-or-universiry" element={<ChooseUniversity />}/>
-        <Route  path="/professionnels/choose-school-or-universiry/:universityId" element={<SingleUniversity />}/>
-        <Route  path="/professionnels/find-job" element={<FindJob />}/>
-        <Route  path="/professionnels/find-job/:jobId" element={<SignleJob />}/>
-        <Route  path="/testimonials" element={<Testimonial />}/>
-        <Route  path="/services/advertise-on-jobpaw" element={<Advertise />}/>
-        <Route  path="/entreprises" element={<Entreprises/>}/>
-        <Route  path="/entreprises/recruter-via-base-de-cv" element={<RecruterViaBaseDeCV/>}/>
-        <Route  path="/entreprises/CreateEntreprisesProfile" element={<CreateEntreprisesProfile />}/>
-        <Route  path="/professionnels/CreateProfessionnelsProfile" element={<CreateProfessionnelsProfile />}/>
-        <Route  path="/universities/CreateUniversitiesPorfile" element={<CreateUniversitiesPorfile />}/>
+        <Route
+          path="/professionnels/choose-school-or-universiry"
+          element={<ChooseUniversity />}
+        />
+        <Route
+          path="/professionnels/choose-school-or-universiry/:universityId"
+          element={<SingleUniversity />}
+        />
+        <Route path="/professionnels/find-job" element={<FindJob />} />
+        <Route path="/professionnels/find-job/:jobId" element={<SignleJob />} />
+        <Route path="/testimonials" element={<Testimonial />} />
+        <Route path="/services/advertise-on-jobpaw" element={<Advertise />} />
+        <Route path="/entreprises" element={<Entreprises />} />
+        <Route
+          path="/entreprises/recruter-via-base-de-cv"
+          element={<RecruterViaBaseDeCV />}
+        />
+        <Route
+          path="/entreprises/CreateEntreprisesProfile"
+          element={<CreateEntreprisesProfile />}
+        />
+        <Route
+          path="/professionnels/CreateProfessionnelsProfile"
+          element={<CreateProfessionnelsProfile />}
+        />
+        <Route
+          path="/universities/CreateUniversitiesPorfile"
+          element={<CreateUniversitiesPorfile />}
+        />
 
         <Route
           path="/entreprises/CreateEntreprisesProfile"
@@ -102,10 +125,7 @@ function index() {
           path="/professionnels/consult-research-work"
           element={<ReserachPaper />}
         />
-        <Route
-          path="/professionnels/seminer"
-          element={<Seminer />}
-        />
+        <Route path="/professionnels/seminer" element={<Seminer />} />
         <Route
           path="/professionnels/consult-research-work/:paperId"
           element={<SignleResearchPaper />}

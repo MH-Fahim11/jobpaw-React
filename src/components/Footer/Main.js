@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Bgimg from "../../assets/images/backgrounds/footer-bg.jpg";
 import Logo from "../../assets/images/logos/logo-for-dark.png";
+import wp from "../../assets/images/wp.png";
+import './footer.css'
 
 function Main() {
   return (
@@ -41,14 +43,59 @@ function Main() {
         </div>
         <div className="main-footer__top">
           <div className="container">
-            <div className="row">
-              <div className="col-md-3">
+            <div className="footer-grid">
+              <div className="">
                 <div className="footer-widget footer-widget--about">
                   <Link to="/" className="footer-widget__logo">
-                    <img src={Logo} width={125} alt="Hiredots HTML Template" />
+                    <img src={Logo} width={200} alt="Hiredots HTML Template" />
                   </Link>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      color: "white",
+                      flexDirection: "column",
+                      marginLeft: "-100px",
+                    }}
+                    className="main-header__call"
+                  >
+                    <p
+                      style={{
+                        fontSize: "10px",
+                        marginTop: "10px",
+                        color: "white",
+                        marginLeft: "-20px",
+                      }}
+                    >
+                      <i style={{ color: "white" }} className="icon-message" />
+                      <Link
+                        style={{ color: "white" }}
+                        to="mailto:info@jobpaw.com"
+                      >
+                        info@jobpaw.com
+                      </Link>
+                    </p>
+                    <p style={{ fontSize: "10px" }}>
+                      <img
+                        style={{ marginRight: "5px" }}
+                        width={20}
+                        src={wp}
+                        alt="wp logo"
+                      />
+                      <i
+                        style={{ color: "white" }}
+                        className="icon-telephone"
+                      />
+                      <Link style={{ color: "white" }} to="tel:+50937019232">
+                        +(509) 3701 9232
+                      </Link>
+                    </p>
+                  </div>
                   {/* Removed text under the logo */}
-                  <div style={{marginLeft:"-100px"}} className="footer-widget__social">
+                  <div
+                    style={{ marginLeft: "-70px" }}
+                    className="footer-widget__social"
+                  >
                     {/* Moved social media icons here */}
                     <Link to="https://twitter.com">
                       <i className="fab fa-twitter" aria-hidden="true" />
@@ -58,18 +105,25 @@ function Main() {
                       <i className="fab fa-facebook" aria-hidden="true" />
                       <span className="sr-only">Facebook</span>
                     </Link>
-                    <Link to="https://pinterest.com">
-                      <i className="fab fa-pinterest-p" aria-hidden="true" />
-                      <span className="sr-only">Pinterest</span>
+                    <Link to="https://linkedin.com">
+                      <i className="fab fa-linkedin" aria-hidden="true" />
+                      <span className="sr-only">LinkedIn</span>
                     </Link>
                     <Link to="https://instagram.com">
                       <i className="fab fa-instagram" aria-hidden="true" />
                       <span className="sr-only">Instagram</span>
                     </Link>
+                    <Link to="https://youtube.com">
+                      <i
+                        class="fa-brands fa-youtube"
+                        aria-hidden="true"
+                      />
+                      <span className="sr-only">Youtube</span>
+                    </Link>
                   </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="">
                 <ul className="list-unstyled footer-widget__links">
                   <li>
                     <Link to="/about">About Company</Link>
@@ -85,7 +139,7 @@ function Main() {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-3">
+              <div className="">
                 <ul className="list-unstyled footer-widget__links">
                   <li>
                     <Link to="/contact">Publier une offre d’emploi</Link>
@@ -101,7 +155,7 @@ function Main() {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-3">
+              <div  className="">
                 <ul className="list-unstyled footer-widget__links">
                   <li>
                     <Link to="/contact">Recruter via Base de CV</Link>
