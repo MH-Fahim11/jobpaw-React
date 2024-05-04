@@ -7,7 +7,7 @@ import Projectone from "../Menhomeone/Projectone";
 import Blog from "../Menhomeone/Blog";
 import Seminer from "../Menhomeone/Seminer";
 import Client from "../Menhomeone/Client";
-import Whychoose from "../Menabout/Whychoose";
+import Whychoose2 from "../Menabout/Whychoose2";
 
 function Main() {
   return (
@@ -19,9 +19,9 @@ function Main() {
         <Service />
         <Projectone />
         <Seminer />
-        <Client />
         <Blog />
-        <Whychoose />
+        <Whychoose2 />
+        <Client />
       </div>
     </>
   );

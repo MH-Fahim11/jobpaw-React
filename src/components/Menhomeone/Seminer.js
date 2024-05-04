@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import { createSlug } from "../Menjobs/Jobfrom";
+import img1 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0023.jpg";
+import img2 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0054.jpg";
+import img3 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0012.jpg";
 
 export const seminarItems = [
   {
     id: 1,
+    image: img1,
     title: "Introduction to Data Science Workshop",
     description:
       "TechMaster Bootcamp is an intensive training program designed to equip participants with the skills and knowledge needed to excel in the rapidly evolving field of technology. Whether you're a beginner looking to kickstart your career or a seasoned professional aiming to enhance your expertise, our bootcamp offers a comprehensive curriculum tailored to meet your needs.",
@@ -14,6 +18,7 @@ export const seminarItems = [
   },
   {
     id: 2,
+    image: img2,
     title: "Web Development Bootcamp",
     description:
       "Learn the latest technologies and frameworks in web development...",
@@ -24,6 +29,7 @@ export const seminarItems = [
   },
   {
     id: 3,
+    image: img3,
     title: "Learn about Digital marketing",
     description:
       "Learn the latest technologies and frameworks in web development...",
@@ -43,8 +49,11 @@ const Seminer = () => {
           <h3 className="sec-title__title">Join free seminers</h3>
         </div>
         <div className="row gutter-y-30">
-          {seminarItems.slice(0,3).map((service, index) => (
+          {seminarItems.slice(0, 3).map((service, index) => (
             <div key={index} className="col-md-6 col-lg-4">
+              <div className="service-one-card__image">
+                <img src={service.image} alt={service.title} />
+              </div>
               <div
                 className="service-one-card service-card-two"
                 data-wow-duration="1500ms"
@@ -55,11 +64,9 @@ const Seminer = () => {
                   style={{ paddingBottom: "10px" }}
                 ></div>
                 <div className="service-one-card__content">
-                  <h3 className="service-one-card__title">
-                    {service.title}
-                  </h3>
+                  <h3 className="service-one-card__title">{service.title}</h3>
                   <p className="service-one-card__text">
-                    {service.description.slice(0,70)}...
+                    {service.description.slice(0, 70)}...
                   </p>
                   <div
                     style={{
@@ -83,6 +90,18 @@ const Seminer = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "20px",
+          }}
+        >
+          <Link to={`/professionnels/seminer`} className="hiredots-btn">
+            View More seminars
+          </Link>
         </div>
       </div>
     </div>
