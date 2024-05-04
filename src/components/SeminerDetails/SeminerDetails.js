@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { createSlug } from "../Menjobs/Jobfrom";
-import { Card, Button } from "react-bootstrap";
+// import { Card, Button } from "react-bootstrap";
 import { seminarItems } from "../Menhomeone/Seminer";
 import Breadcrumb from "../Breadcrumb/Main";
 
