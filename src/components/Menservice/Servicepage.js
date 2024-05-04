@@ -7,37 +7,50 @@ import Service3 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0039.jpg"
 import Service4 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0042.jpg";
 import Service5 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0045.jpg";
 import Service6 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0046.jpg";
+import icon1 from "../../assets/images/5x/1.jpg";
+import icon2 from "../../assets/images/5x/2.jpg";
+import icon3 from "../../assets/images/5x/3.jpg";
+import icon4 from "../../assets/images/5x/4.jpg";
+import icon5 from "../../assets/images/5x/5.jpg";
+import icon6 from "../../assets/images/5x/6.jpg";
 
 function Servicepage() {
   const services = [
     {
       image: Service1,
       title: "A propos de JobPaw",
+      icon: icon1,
       path: "/about",
     },
     {
       image: Service2,
       title: "Contactez-nous",
+      icon: icon2,
       path: "/professionnels/cv-paw",
     },
     {
       image: Service3,
       title: "Questions-Réponses",
+      icon: icon3,
       path: "/faq",
     },
     {
       image: Service4,
       title: "Témoignage",
+      icon: icon4,
       path: "/testimonials",
     },
     {
       image: Service5,
       title: "Mettre publicité sur JobPaw",
+      icon: icon5,
       path: "/services/advertise-on-jobpaw",
     },
     {
       image: Service6,
       title: "Cartographie des opportunités",
+      icon: icon6,
+      path: "/services/advertise-on-jobpaw",
     },
   ];
 
@@ -58,7 +71,7 @@ function Servicepage() {
                 <div className="feature-one__item__content">
                   <div className="feature-one__item__ball" />
                   <div className="feature-one__item__icon">
-                    <span className={feature.icon} />
+                    <img className="rounded-circle" width={100} height={100} src={feature.icon} alt="Icon" />
                   </div>
                   <h3 className="feature-one__item__title">{feature.title}</h3>
                   <Link to={feature.path} className="hiredots-btn">

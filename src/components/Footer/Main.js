@@ -64,7 +64,6 @@ function Main() {
                         fontSize: "10px",
                         marginTop: "10px",
                         color: "white",
-                        marginLeft: "-20px",
                       }}
                     >
                       <i style={{ color: "white" }} className="icon-message" />
@@ -76,12 +75,6 @@ function Main() {
                       </Link>
                     </p>
                     <p style={{ fontSize: "10px" }}>
-                      <img
-                        style={{ marginRight: "5px" }}
-                        width={20}
-                        src={wp}
-                        alt="wp logo"
-                      />
                       <i
                         style={{ color: "white" }}
                         className="icon-telephone"

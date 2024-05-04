@@ -44,7 +44,7 @@ function Funfact() {
         <h6 className="sec-title__tagline">Services</h6>
         <h3 className="sec-title__title">How we can help you</h3>
       </div>
-      <div className="d-flex" style={{gap:"10px", justifyContent:"space-between"}}>
+      <div className="d-md-flex " style={{gap:"10px", justifyContent:"space-between"}}>
         {data.map((item, index) => {
           return (
             <Link to={item.link} key={index} className="">
