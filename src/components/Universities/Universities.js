@@ -6,49 +6,53 @@ import img5 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0031.jpg";
 import img6 from "../../assets/images/34FinalPhotos/IMG-20240320-WA0035.jpg";
 import { Link } from "react-router-dom";
 import Breadcrumb from "../Breadcrumb/Main";
-
+import icon1 from '../../assets/images/5x/1.jpg'
+import icon2 from '../../assets/images/5x/2.jpg'
+import icon3 from '../../assets/images/5x/5.jpg'
+import icon4 from '../../assets/images/5x/7.jpg'
+import icon5 from '../../assets/images/5x/8.jpg'
+import icon6 from '../../assets/images/5x/9.jpg'
 const data = [
   {
     name: "Adapter les formations au marché",
     image: img1,
     icon: icon1,
     link: "",
-    icon: icon1,
+   
   },
   {
     name: "Promouvoir son université ou son école",
     image: img2,
     icon: icon2,
     link: "/professionnels/choose-school-or-universiry",
-    icon: icon2,
+ 
   },
   {
     name: "Stimuler recherche et innovation",
     image: img3,
     icon: icon3,
     link: "",
-    icon: icon3,
+ 
   },
   {
     name: "Valoriser les diplomés",
     image: img4,
     icon: icon4,
     link: "",
-    icon: icon4,
   },
   {
     name: "Partager les travaux de recherche",
     image: img5,
     icon: icon5,
     link: "/professionnels/consult-research-work",
-    icon: icon5,
+
   },
   {
     name: "Opportunités d’affaires",
     image: img6,
     icon: icon6,
     link: "",
-    icon: icon6,
+
   },
 ];
 
