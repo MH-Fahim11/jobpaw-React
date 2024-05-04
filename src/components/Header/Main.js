@@ -7,6 +7,7 @@ import fr from "../../assets/images/country/fr.png";
 import ht from "../../assets/images/country/ht.png";
 import spain from "../../assets/images/country/spain.jpg";
 import uk from "../../assets/images/country/uk.png";
+import './style.css'
 
 function Main() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -89,11 +90,7 @@ function Main() {
         <div className="main-header__inner">
           <div className="main-header__logo">
             <Link to="/">
-              <img
-                className="img-fluid w-100 w-md-120"
-                src={Logo}
-                alt="Jbbpaw LOGO"
-              />
+              <img className="main-logo-header" src={Logo} alt="Jbbpaw LOGO" />
             </Link>
           </div>
           <Link
@@ -230,7 +227,6 @@ function Main() {
             </div>
           </div>
           <div className="main-header__link">
-            <Link className="main-header__btn"></Link>
           </div>
           <div
             style={{
@@ -247,7 +243,7 @@ function Main() {
               <span />
               <span />
             </div>
-            <div style={{fontSize:"12px"}} className="d-flex d-md-none">
+            <div style={{ fontSize: "12px" }} className="d-flex d-md-none">
               <Link to="">Connexion</Link>
               <div className="dropdown">
                 <span
@@ -404,33 +400,30 @@ function Main() {
               </ul>
             </div>
             <div
-                    style={{ marginLeft: "-50px" }}
-                    className="footer-widget__social"
-                  >
-                    <Link to="https://twitter.com">
-                      <i className="fab fa-twitter" aria-hidden="true" />
-                      <span className="sr-only">Twitter</span>
-                    </Link>
-                    <Link to="https://facebook.com">
-                      <i className="fab fa-facebook" aria-hidden="true" />
-                      <span className="sr-only">Facebook</span>
-                    </Link>
-                    <Link to="https://linkedin.com">
-                      <i className="fab fa-linkedin" aria-hidden="true" />
-                      <span className="sr-only">LinkedIn</span>
-                    </Link>
-                    <Link to="https://instagram.com">
-                      <i className="fab fa-instagram" aria-hidden="true" />
-                      <span className="sr-only">Instagram</span>
-                    </Link>
-                    <Link to="https://youtube.com">
-                      <i
-                        class="fa-brands fa-youtube"
-                        aria-hidden="true"
-                      />
-                      <span className="sr-only">Youtube</span>
-                    </Link>
-                  </div>
+              style={{ marginLeft: "-50px" }}
+              className="footer-widget__social"
+            >
+              <Link to="https://twitter.com">
+                <i className="fab fa-twitter" aria-hidden="true" />
+                <span className="sr-only">Twitter</span>
+              </Link>
+              <Link to="https://facebook.com">
+                <i className="fab fa-facebook" aria-hidden="true" />
+                <span className="sr-only">Facebook</span>
+              </Link>
+              <Link to="https://linkedin.com">
+                <i className="fab fa-linkedin" aria-hidden="true" />
+                <span className="sr-only">LinkedIn</span>
+              </Link>
+              <Link to="https://instagram.com">
+                <i className="fab fa-instagram" aria-hidden="true" />
+                <span className="sr-only">Instagram</span>
+              </Link>
+              <Link to="https://youtube.com">
+                <i class="fa-brands fa-youtube" aria-hidden="true" />
+                <span className="sr-only">Youtube</span>
+              </Link>
+            </div>
           </div>
         </div>
       )}
@@ -439,3 +432,139 @@ function Main() {
 }
 
 export default Main;
+
+// import Container from "react-bootstrap/Container";
+// import Nav from "react-bootstrap/Nav";
+// import Navbar from "react-bootstrap/Navbar";
+// import NavDropdown from "react-bootstrap/NavDropdown";
+// import { useState } from "react";
+
+// function Main() {
+//   const [search, setsearch] = useState(false);
+//   return (
+//     <Navbar expand="lg" className="bg-body-tertiary" style={{display:"flex", gap:"50px", justifyContent:"space-around", padding:"10px 50px"}}>
+//         <Navbar.Brand href="#home">
+//           <img width={150} src={Logo} alt="header logo" />
+//         </Navbar.Brand>
+
+//         <Link
+//           to="#"
+//           className="search-toggler main-header__search"
+//           // onClick={() => setsearch(true)}
+//         >
+//           <i className="icon-magnifying-glass" aria-hidden="true" />
+//           <span className="sr-only">Search</span>
+//         </Link>
+//         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+//         <Navbar.Collapse id="basic-navbar-nav">
+//           <Nav className="me-auto">
+//             <Nav.Link href="#professionnels">Professionels</Nav.Link>
+//             <Nav.Link href="#entreprises">Entreprises</Nav.Link>
+//             <Nav.Link href="#universities">Universities</Nav.Link>
+//             <Nav.Link href="#services">Services</Nav.Link>
+//             <Nav.Link href="#projets">Projets</Nav.Link>
+//           </Nav>
+//           <div
+//             style={{
+//               display: "flex",
+//               alignItems: "center",
+//               gap: "",
+//               flexDirection: "column",
+//             }}
+//             className="main-header__call"
+//           >
+//             <p>
+//               <i className="icon-message" />
+//               <Link to="mailto:info@jobpaw.com">info@jobpaw.com</Link>
+//             </p>
+//             <p>
+//               <i className="icon-telephone" />
+//               <Link to="tel:+50937019232">+(509) 3701 9232</Link>
+//             </p>
+//           </div>
+//           <div className="d-flex" style={{ gap: "20px" }}>
+//             <Link to="">Connexion</Link>
+//             <div className="dropdown">
+//               <span
+//                 data-mdb-button-init
+//                 data-mdb-ripple-init
+//                 data-mdb-dropdown-init
+//                 className="dropdown-toggle "
+//                 type="button"
+//                 id="dropdownMenuButton"
+//                 data-mdb-toggle="dropdown"
+//                 aria-expanded="false"
+//               >
+//                 Inscription
+//               </span>
+//               <ul
+//                 className="dropdown-menu"
+//                 aria-labelledby="dropdownMenuButton"
+//               >
+//                 <li>
+//                   <Link className="dropdown-item" to="/entreprises">
+//                     Entreprises
+//                   </Link>
+//                 </li>
+//                 <li>
+//                   <Link className="dropdown-item" to="/professionnels">
+//                     Professionnels
+//                   </Link>
+//                 </li>
+//                 <li>
+//                   <Link className="dropdown-item" to="/universities">
+//                     Universités
+//                   </Link>
+//                 </li>
+//               </ul>
+//             </div>
+//             <div className="dropdown ">
+//               <span
+//                 data-mdb-button-init
+//                 data-mdb-ripple-init
+//                 data-mdb-dropdown-init
+//                 className="dropdown-toggle "
+//                 style={{
+//                   display: "flex",
+//                   alignItems: "center",
+//                   marginRight: "100px",
+//                   width: "50px",
+//                 }}
+//                 type="button"
+//                 id="dropdownMenuButton"
+//                 data-mdb-toggle="dropdown"
+//                 aria-expanded="false"
+//               >
+//                 <img width={15} height={15} src={fr} alt="fr icon" />
+//                 FR
+//               </span>
+//               <ul
+//                 className="dropdown-menu p-3"
+//                 aria-labelledby="dropdownMenuButton"
+//                 style={{
+//                   width: "50px",
+//                   backgroundColor: "transparent",
+//                   border: "none",
+//                 }}
+//               >
+//                 <li>
+//                   <img width={15} height={15} src={uk} alt="fr icon" />
+//                   EN
+//                 </li>
+//                 <li>
+//                   <img width={15} height={15} src={ht} alt="fr icon" />
+//                   HT
+//                 </li>
+//                 <li>
+//                   <img width={15} height={15} src={spain} alt="fr icon" />
+//                   ES
+//                 </li>
+//               </ul>
+//             </div>
+//           </div>
+//         </Navbar.Collapse>
+//     </Navbar>
+//   );
+// }
+
+// export default Main;

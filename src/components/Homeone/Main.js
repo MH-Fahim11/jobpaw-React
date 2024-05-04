@@ -20,7 +20,7 @@ function Main() {
         <Projectone />
         <Seminer />
         <Blog />
-        <Whychoose2 />
+        {/* <Whychoose2 /> */}
         <Client />
       </div>
     </>

@@ -11,7 +11,7 @@ export const researchPapers = [
     image: Blog1,
     title: "Guide to HR Adviser and Clients Lessening",
     publicationDate: "2023-05-15",
-    authors: ["John Doe", "Jane Smith"],
+    authors: "John DOE",
     keywords: ["Deep Learning", "Image Recognition", "Neural Networks"],
     abstract:
       "This paper explores various deep learning techniques for image recognition, including convolutional neural networks (CNNs), recurrent neural networks (RNNs), and deep belief networks (DBNs). It discusses the applications of these techniques in computer vision tasks such as object detection, image classification, and semantic segmentation.",
@@ -20,7 +20,7 @@ export const researchPapers = [
     image: Blog2,
     title: "Top Skin care tips for oily skins",
     publicationDate: "2023-05-15",
-    authors: ["John Doe", "Jane Smith"],
+    authors: "Michel Jackson",
     keywords: ["Deep Learning", "Image Recognition", "Neural Networks"],
     abstract:
       "This paper explores various deep learning techniques for image recognition, including convolutional neural networks (CNNs), recurrent neural networks (RNNs), and deep belief networks (DBNs). It discusses the applications of these techniques in computer vision tasks such as object detection, image classification, and semantic segmentation.",
@@ -29,7 +29,7 @@ export const researchPapers = [
     image: Blog3,
     title: "Outstanding island for winter sun",
     publicationDate: "2023-05-15",
-    authors: ["John Doe", "Jane Smith"],
+    authors: "Omar sanny",
     keywords: ["Deep Learning", "Image Recognition", "Neural Networks"],
     abstract:
       "This paper explores various deep learning techniques for image recognition, including convolutional neural networks (CNNs), recurrent neural networks (RNNs), and deep belief networks (DBNs). It discusses the applications of these techniques in computer vision tasks such as object detection, image classification, and semantic segmentation.",
