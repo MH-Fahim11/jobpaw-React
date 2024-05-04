@@ -3,10 +3,10 @@ import pic_2 from "../../assets/images/5x/5.jpg";
 import pic_3 from "../../assets/images/5x/4.jpg";
 import pic_4 from "../../assets/images/5x/3.jpg";
 import pic_5 from "../../assets/images/5x/11.jpg";
-import pic_6 from "../../assets/images/5x/2.jpg";
-import pic_7 from "../../assets/images/5x/15.jpg";
-import pic_8 from "../../assets/images/5x/1.jpg";
-import pic_9 from "../../assets/images/5x/6.jpg";
+// import pic_6 from "../../assets/images/5x/2.jpg";
+// import pic_7 from "../../assets/images/5x/15.jpg";
+// import pic_8 from "../../assets/images/5x/1.jpg";
+// import pic_9 from "../../assets/images/5x/6.jpg";
 import { Link } from "react-router-dom";
 
 const data = [
