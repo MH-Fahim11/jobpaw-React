@@ -74,7 +74,7 @@ const Universities = () => {
               <div className="feature-one__item__content">
                 <div className="feature-one__item__ball" />
                 <div className="feature-one__item__icon">
-                  <span className={feature.iconClass} />
+                  <span className={feature.icon} />
                 </div>
                 <h3 className="feature-one__item__title">{feature.name}</h3>
                 <Link
