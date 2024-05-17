@@ -2221,7 +2221,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--hiredots-black2, #12243c);
+  background-color: var(--hiredots-black2, #1f2147);
   font-size: 14px;
   color: var(--hiredots-white, #fff);
   transition: all 500ms ease;
@@ -6769,6 +6769,7 @@ body.megamenu-popup-active .mobile-nav__content {
   color: var(--hiredots-white, #fff);
 }
 
+
 .mobile-nav__wrapper.expanded {
   opacity: 1;
   transform: translateX(0%);
@@ -6789,7 +6790,7 @@ body.megamenu-popup-active .mobile-nav__content {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--hiredots-black, #0b182a);
+  background-color: var(--hiredots-black, #1f2147);
   opacity: 0.3;
   cursor: url(../images/close.png), auto;
 }

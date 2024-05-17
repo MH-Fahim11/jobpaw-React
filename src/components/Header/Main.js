@@ -244,7 +244,7 @@ function Main() {
               <span />
             </div>
             <div style={{ fontSize: "12px" }} className="d-flex d-md-none">
-              <Link to="">Connexion</Link>
+              
               <div className="dropdown">
                 <span
                   data-mdb-button-init
@@ -256,6 +256,7 @@ function Main() {
                   data-mdb-toggle="dropdown"
                   aria-expanded="false"
                 >
+                  <Link to="">Connexion</Link> <br/>
                   Inscription
                 </span>
                 <ul
@@ -361,7 +362,7 @@ function Main() {
         >
           <div
             className="mobile-nav__overlay mobile-nav__toggler"
-            onClick={() => setIsDropdownOpen(false)}
+            onClick={() => setMobileMenuOpen(false)}
           />
           <div className="mobile-nav__content">
             <span
@@ -374,7 +375,7 @@ function Main() {
               <Link
                 to="/"
                 aria-label="logo image"
-                onClick={() => setIsDropdownOpen(false)}
+                onClick={() => setMobileMenuOpen(false)}
               >
                 <img src={Logo1} width={130} alt="" />
               </Link>
@@ -383,19 +384,19 @@ function Main() {
             <div className="mobile-nav__container">
               <ul className="main-menu__list">
                 <li className={`dropdown ${menu.home && "current"}`}>
-                  <Link to="/professionnels">Professionels</Link>
+                  <Link to="/professionnels" onClick={() => setMobileMenuOpen(false)}>Professionels</Link>
                 </li>
                 <li className={`dropdown ${menu.home && "current"}`}>
-                  <Link to="/entreprises">Entreprises</Link>
+                  <Link to="/entreprises" onClick={() => setMobileMenuOpen(false)}>Entreprises</Link>
                 </li>
                 <li className={`dropdown ${menu.home && "current"}`}>
-                  <Link to="/universities">Universities</Link>
+                  <Link to="/universities" onClick={() => setMobileMenuOpen(false)}>Universities</Link>
                 </li>
                 <li className={`dropdown ${menu.home && "current"}`}>
-                  <Link to="/services">Services</Link>
+                  <Link to="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link>
                 </li>
                 <li className={`dropdown ${menu.home && "current"}`}>
-                  <Link to="/projets">Projets</Link>
+                  <Link to="/projets" onClick={() => setMobileMenuOpen(false)}>Projets</Link>
                 </li>
               </ul>
             </div>
