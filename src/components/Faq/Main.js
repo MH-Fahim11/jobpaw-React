@@ -9,11 +9,11 @@ function Main() {
     return (
         <>
             <div className="page-wrapper">
-                <Header />
+                {/* <Header /> */}
                 <Breadcrumb subtitle="Home" title="FAQs" />
                 <Faqsearch />
                 <Faqpage />
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </>
     )

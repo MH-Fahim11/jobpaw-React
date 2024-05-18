@@ -68,4 +68,8 @@
   }.right-navbar {
     margin-left: 0px;
   }
+  .main-header__logo a img {
+    width: 100px;
+    margin-right: -50px;
+}
 }
