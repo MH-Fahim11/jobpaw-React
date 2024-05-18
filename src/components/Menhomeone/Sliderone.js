@@ -13,7 +13,7 @@ import Bgimg3 from '../../assets/images/34FinalPhotos/IMG-20240320-WA0053.jpg'
 
 const Homeslider = {
     loop: true,
-    items : 3,
+    items : 2,
     margin: 0,
     speed: 2100,
     autoplaySpeed: 2000,
@@ -31,20 +31,18 @@ function Sliderone() {
                             <div className="main-slider-one__bg" style={{ backgroundImage: `url(${Bgimg})` }}/>
                             <div className="main-slider-one__overlay" />
 
-
-                            {/* <div className="main-slider-one__shape" style={{ backgroundImage: `url(${Bgimg1})` }}/> */}
-
                             <div className="container">
                                 <div className="row">
                                     <div className="col-md-12">  
                                         <div className="main-slider-one__content">
-                                            <div className="main-slider-one__image">
+                                            {/* <div className="main-slider-one__image">
                                                 <img src={Slidershape2} alt="hiredots"/>
-                                            </div>
+                                            </div> */}
                                             <h2 className="main-slider-one__title">
-                                                Right
-                                                <br /> People for
-                                                <br /> the Business
+                                                Recrutez en publiant vos offres d'emploi <br/>
+                                                <span className='text-danger'>Achetez en publiant vos appels d'offres</span> <br/>
+                                                Signalez en publiant vos plans annuels d'achats <br/>
+                                                <span className='text-danger'>Placez en adaptant vos formations aux marchés</span>
                                             </h2>
                                             <div className="main-slider-one__btn">
                                                 <Link to="/services" className="hiredots-btn">
@@ -68,13 +66,12 @@ function Sliderone() {
                                 <div className="row">
                                     <div className="col-md-12">
                                         <div className="main-slider-one__content">
-                                            <div className="main-slider-one__image">
+                                            {/* <div className="main-slider-one__image">
                                                 <img src={Slidershape2} alt="hiredots"/>
-                                            </div>
+                                            </div> */}
                                             <h2 className="main-slider-one__title">
-                                                Right
-                                                <br /> People for
-                                                <br /> the Business
+                                                Vous voulez recruter un<br/> professionnel qualifié.<br/>
+                                                <span className='text-danger'>Publiez ici vos offres d'emploi <br/>et filtrez les candidats.</span>
                                             </h2>
                                             <div className="main-slider-one__btn">
                                                 <Link to="/services" className="hiredots-btn">
@@ -87,12 +84,12 @@ function Sliderone() {
                             </div>
                         </div>
                     </div>
-                    <div className="item" data-dot="<button>3</button>">
+                    {/* <div className="item" data-dot="<button>3</button>">
                         <div className="main-slider-one__item">
                             <div className="main-slider-one__bg"style={{ backgroundImage: `url(${Bgimg3})`}}/>
                             <div className="main-slider-one__overlay" /> 
 
-                            {/* <div className="main-slider-one__shape" style={{ backgroundImage: `url(${Bgimg1})` }}/> */}
+                             <div className="main-slider-one__shape" style={{ backgroundImage: `url(${Bgimg1})` }}/>
 
                             <div className="container">
                                 <div className="row">
@@ -100,7 +97,7 @@ function Sliderone() {
                                         <div className="main-slider-one__content">
                                             <div className="main-slider-one__image">
                                                 <img src={Slidershape2} alt="hiredots"/>
-                                            </div>
+                                            </div> 
                                             <h2 className="main-slider-one__title">
                                                 Right
                                                 <br /> People for
@@ -116,7 +113,7 @@ function Sliderone() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </Slider>
             </section>
         </div>

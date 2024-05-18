@@ -7299,7 +7299,7 @@ body.megamenu-popup-active .mobile-nav__content {
   position: relative;
 }
 .client-carousel__one__item img {
-  opacity: 0.3;
+  opacity: 0.9;
   transition: all 500ms ease;
   max-width: 122px;
   width: auto !important;
@@ -7550,8 +7550,8 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .main-slider-one__title {
   color: var(--hiredots-white, #fff);
-  font-size: 90px;
-  line-height: 90px;
+  font-size: 40px;
+  line-height: 70px;
   margin: 0 0 30px;
   opacity: 0;
   transition: transform 1200ms ease, opacity 1200ms ease;
