@@ -79,7 +79,7 @@ export const tenderItems = [
 
 function Projectone() {
   return (
-    <div>
+    <div className="my-5" style={{backgroundColor:"#CCCCFF"}}>
       <div className="project-one container">
         <div className="">
           <div className="sec-title text-center">

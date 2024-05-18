@@ -3093,7 +3093,7 @@ h6 {
 }
 @media (min-width: 1200px) {
   .main-header__logo {
-    margin-bottom: 33px;
+    margin-bottom: 10px;
     margin-right: 57px;
   }
 }

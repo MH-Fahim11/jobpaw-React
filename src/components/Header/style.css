@@ -12,13 +12,17 @@
     gap: 50px;
 }
 
-.main-header__logo a img {
+.main-logo-header {
     width: 150px;
     margin-right: -50px;
 }
 
 .drop-down-btn div {
   padding-bottom: -20px;
+}
+
+.dropdown-menu {
+  width: 10px !important;
 }
 
 
@@ -67,5 +71,8 @@
     margin-left: -180px;
   }.right-navbar {
     margin-left: 0px;
+  }
+  .main-logo-header {
+    width: 100px !important;
   }
 }
