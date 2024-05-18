@@ -13,14 +13,13 @@ function Main() {
   return (
     <>
       <div className="page-wrapper">
-        {/* <Header /> */}
         <Sliderone />
         <Funfact />
         <Service />
         <Projectone />
         <Seminer />
         <Blog />
-        {/* <Whychoose2 /> */}
+        <Whychoose2 />
         <Client />
       </div>
     </>
