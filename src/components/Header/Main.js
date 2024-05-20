@@ -7,16 +7,11 @@ import fr from "../../assets/images/country/fr.png";
 import ht from "../../assets/images/country/ht.png";
 import spain from "../../assets/images/country/spain.jpg";
 import uk from "../../assets/images/country/uk.png";
-import './style.css'
+import { Us, Fr, Ht, Es } from "react-flags-select";
+import "./style.css";
 
 function Main() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  // const [homeDrop, sethomeDrop] = useState(false);
-  // const [headerDrop, setheaderDrop] = useState(false);
-  // const [pageDrop, setpageDrop] = useState(false);
-  // const [servicesDrop, setservicesDrop] = useState(false);
-  // const [projectsDrop, setprojectsDrop] = useState(false);
-  // const [blogDrop, setblogDrop] = useState(false);
   const [search, setsearch] = useState(false);
   const location = useLocation();
   const path = location.pathname;
@@ -63,9 +58,6 @@ function Main() {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  // const closeMenu = () => {
-  //   setMobileMenuOpen(false);
-  // };
   const [selectedValue, setSelectedValue] = useState("");
   const navigate = useNavigate();
 
@@ -79,6 +71,14 @@ function Main() {
       navigate("/universities");
     }
   };
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  console.log(isOpen);
 
   return (
     <>
@@ -123,111 +123,99 @@ function Main() {
             </nav>
             <div
               style={{
+                backgroundColor: "#00A9E1",
+                padding: "5px 15px",
                 display: "flex",
-                alignItems: "center",
-                gap: "",
-                flexDirection: "column",
-              }}
-              className="main-header__call"
-            >
-              <p style={{ fontSize: "10px", marginTop: "10px" }}>
-                <i className="icon-message" />
-                <Link to="mailto:info@jobpaw.com">info@jobpaw.com</Link>
-              </p>
-              <p style={{ fontSize: "10px" }}>
-                <i className="icon-telephone" />
-                <Link to="tel:+50937019232">+(509) 3701 9232</Link>
-              </p>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-around",
                 gap: "10px",
+                alignItems: "center",
+                borderRadius:'5px'
               }}
             >
-              <div className="dropdown">
-                <span
-                  data-mdb-button-init
-                  data-mdb-ripple-init
-                  data-mdb-dropdown-init
-                  className="dropdown-toggle "
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-mdb-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Inscription
-                </span>
-                <ul
-                  className="dropdown-menu"
-                  aria-labelledby="dropdownMenuButton"
-                >
-                  <li>
-                    <Link className="dropdown-item" to="/entreprises">
-                      Entreprises
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/professionnels">
-                      Professionnels
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/universities">
-                      Universités
-                    </Link>
-                  </li>
-                </ul>
+              <div
+                style={{
+                  backgroundColor: "white",
+                  height: "50px",
+                  padding: "0px 10px",
+                  borderRadius:'5px'
+                }}
+              >
+                <p style={{
+                  color:"#19a4de"
+                }}>Connexion</p>
+                <p style={{ marginTop: "-20px" }}>
+                  <select style={{ border: "none" }}>
+                    <option>Inscription</option>
+                    <option>Entreprises</option>
+                    <option>Professionnels</option>
+                    <option>Universités</option>
+                  </select>
+                </p>
               </div>
-              <div className="dropdown ">
-                <span
-                  data-mdb-button-init
-                  data-mdb-ripple-init
-                  data-mdb-dropdown-init
-                  className="dropdown-toggle "
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginRight: "100px",
-                    width: "50px",
-                  }}
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-mdb-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <img width={15} height={15} src={fr} alt="fr icon" />
-                  FR
-                </span>
-                <ul
-                  className="dropdown-menu p-3"
-                  aria-labelledby="dropdownMenuButton"
-                  style={{
-                    width: "50px",
-                    backgroundColor: "transparent",
-                    border: "none",
-                  }}
-                >
-                  <li>
-                    <img width={15} height={15} src={uk} alt="fr icon" />
-                    EN
-                  </li>
-                  <li>
-                    <img width={15} height={15} src={ht} alt="fr icon" />
-                    HT
-                  </li>
-                  <li>
-                    <img width={15} height={15} src={spain} alt="fr icon" />
-                    ES
-                  </li>
-                </ul>
+              <div
+                style={{
+                  backgroundColor: "white",
+                  height: "50px",
+                  display: "flex",
+                  padding: "0px 10px",
+                  alignItems: "center",
+                  borderRadius:'5px'
+                }}
+              >
+                <button style={{ border: "none" }} onClick={toggleDropdown}>
+                  <Fr
+                    style={{
+                      width: "30px",
+                      height: "30px",
+                      borderRadius: "50%",
+                    }}
+                  />
+                </button>
+                {isOpen ? (
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "10px",
+                      marginTop: "50px",
+                      backgroundColor: "white",
+                      padding: "10px",
+                      borderRadius: "10px",
+                    }}
+                  >
+                    <p>
+                      <Us
+                        style={{
+                          width: "30px",
+                          height: "30px",
+                          borderRadius: "50%",
+                        }}
+                      />
+                    </p>
+                    <p>
+                      <Ht
+                        style={{
+                          width: "30px",
+                          height: "30px",
+                          borderRadius: "50%",
+                        }}
+                      />
+                    </p>
+                    <p>
+                      <Es
+                        style={{
+                          width: "30px",
+                          height: "30px",
+                          borderRadius: "50%",
+                        }}
+                      />
+                    </p>
+                  </div>
+                ) : (
+                  <p></p>
+                )}
               </div>
             </div>
           </div>
-          <div className="main-header__link">
-          </div>
+          <div className="main-header__link"></div>
           <div
             style={{
               display: "flex",
@@ -244,7 +232,6 @@ function Main() {
               <span />
             </div>
             <div style={{ fontSize: "12px" }} className="d-flex d-md-none">
-              
               <div className="dropdown">
                 <span
                   data-mdb-button-init
@@ -256,7 +243,7 @@ function Main() {
                   data-mdb-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <Link to="">Connexion</Link> <br/>
+                  <Link to="">Connexion</Link> <br />
                   Inscription
                 </span>
                 <ul
@@ -280,48 +267,69 @@ function Main() {
                   </li>
                 </ul>
               </div>
-              <div className="dropdown ">
-                <span
-                  data-mdb-button-init
-                  data-mdb-ripple-init
-                  data-mdb-dropdown-init
-                  className="dropdown-toggle "
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginRight: "100px",
-                    width: "50px",
-                  }}
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-mdb-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <img width={15} height={15} src={fr} alt="fr icon" />
-                  FR
-                </span>
-                <ul
-                  className="dropdown-menu p-3"
-                  aria-labelledby="dropdownMenuButton"
-                  style={{
-                    width: "50px",
-                    backgroundColor: "transparent",
-                    border: "none",
-                  }}
-                >
-                  <li>
-                    <img width={15} height={15} src={uk} alt="fr icon" />
-                    EN
-                  </li>
-                  <li>
-                    <img width={15} height={15} src={ht} alt="fr icon" />
-                    HT
-                  </li>
-                  <li>
-                    <img width={15} height={15} src={spain} alt="fr icon" />
-                    ES
-                  </li>
-                </ul>
+              <div
+                style={{
+                  backgroundColor: "white",
+                  height: "50px",
+                  display: "flex",
+                  padding: "0px 10px",
+                  alignItems: "center",
+                  marginRight:"50px"
+                }}
+              >
+                <button style={{ border: "none" }} onClick={toggleDropdown}>
+                  <Fr
+                    style={{
+                      width: "30px",
+                      height: "30px",
+                      borderRadius: "50%",
+                      zIndex:"50"
+                    }}
+                  />
+                </button>
+                {isOpen ? (
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "10px",
+                      marginTop: "50px",
+                      backgroundColor: "white",
+                      padding: "10px",
+                      borderRadius: "10px",
+                      zIndex:"50"
+                    }}
+                  >
+                    <p>
+                      <Us
+                        style={{
+                          width: "30px",
+                          height: "30px",
+                          borderRadius: "50%",
+                        }}
+                      />
+                    </p>
+                    <p>
+                      <Ht
+                        style={{
+                          width: "30px",
+                          height: "30px",
+                          borderRadius: "50%",
+                        }}
+                      />
+                    </p>
+                    <p>
+                      <Es
+                        style={{
+                          width: "30px",
+                          height: "30px",
+                          borderRadius: "50%",
+                        }}
+                      />
+                    </p>
+                  </div>
+                ) : (
+                  <p></p>
+                )}
               </div>
             </div>
           </div>
@@ -383,20 +391,20 @@ function Main() {
 
             <div className="mobile-nav__container">
               <ul className="main-menu__list">
-                <li className={`dropdown ${menu.home && "current"}`}>
-                  <Link to="/professionnels" onClick={() => setMobileMenuOpen(false)}>Professionels</Link>
+                <li className={`dropdown ${menu.home && "current"}`} onClick={() => setMobileMenuOpen(false)}>
+                  <Link to="/professionnels">Professionels</Link>
                 </li>
-                <li className={`dropdown ${menu.home && "current"}`}>
-                  <Link to="/entreprises" onClick={() => setMobileMenuOpen(false)}>Entreprises</Link>
+                <li className={`dropdown ${menu.home && "current"}`} onClick={() => setMobileMenuOpen(false)}>
+                  <Link to="/entreprises">Entreprises</Link>
                 </li>
-                <li className={`dropdown ${menu.home && "current"}`}>
-                  <Link to="/universities" onClick={() => setMobileMenuOpen(false)}>Universities</Link>
+                <li className={`dropdown ${menu.home && "current"}`} onClick={() => setMobileMenuOpen(false)}>
+                  <Link to="/universities">Universities</Link>
                 </li>
-                <li className={`dropdown ${menu.home && "current"}`}>
-                  <Link to="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+                <li className={`dropdown ${menu.home && "current"}`} onClick={() => setMobileMenuOpen(false)}>
+                  <Link to="/services">Services</Link>
                 </li>
-                <li className={`dropdown ${menu.home && "current"}`}>
-                  <Link to="/projets" onClick={() => setMobileMenuOpen(false)}>Projets</Link>
+                <li className={`dropdown ${menu.home && "current"}`} onClick={() => setMobileMenuOpen(false)}>
+                  <Link to="/projets">Projets</Link>
                 </li>
               </ul>
             </div>
@@ -433,139 +441,3 @@ function Main() {
 }
 
 export default Main;
-
-// import Container from "react-bootstrap/Container";
-// import Nav from "react-bootstrap/Nav";
-// import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
-// import { useState } from "react";
-
-// function Main() {
-//   const [search, setsearch] = useState(false);
-//   return (
-//     <Navbar expand="lg" className="bg-body-tertiary" style={{display:"flex", gap:"50px", justifyContent:"space-around", padding:"10px 50px"}}>
-//         <Navbar.Brand href="#home">
-//           <img width={150} src={Logo} alt="header logo" />
-//         </Navbar.Brand>
-
-//         <Link
-//           to="#"
-//           className="search-toggler main-header__search"
-//           // onClick={() => setsearch(true)}
-//         >
-//           <i className="icon-magnifying-glass" aria-hidden="true" />
-//           <span className="sr-only">Search</span>
-//         </Link>
-//         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-//         <Navbar.Collapse id="basic-navbar-nav">
-//           <Nav className="me-auto">
-//             <Nav.Link href="#professionnels">Professionels</Nav.Link>
-//             <Nav.Link href="#entreprises">Entreprises</Nav.Link>
-//             <Nav.Link href="#universities">Universities</Nav.Link>
-//             <Nav.Link href="#services">Services</Nav.Link>
-//             <Nav.Link href="#projets">Projets</Nav.Link>
-//           </Nav>
-//           <div
-//             style={{
-//               display: "flex",
-//               alignItems: "center",
-//               gap: "",
-//               flexDirection: "column",
-//             }}
-//             className="main-header__call"
-//           >
-//             <p>
-//               <i className="icon-message" />
-//               <Link to="mailto:info@jobpaw.com">info@jobpaw.com</Link>
-//             </p>
-//             <p>
-//               <i className="icon-telephone" />
-//               <Link to="tel:+50937019232">+(509) 3701 9232</Link>
-//             </p>
-//           </div>
-//           <div className="d-flex" style={{ gap: "20px" }}>
-//             <Link to="">Connexion</Link>
-//             <div className="dropdown">
-//               <span
-//                 data-mdb-button-init
-//                 data-mdb-ripple-init
-//                 data-mdb-dropdown-init
-//                 className="dropdown-toggle "
-//                 type="button"
-//                 id="dropdownMenuButton"
-//                 data-mdb-toggle="dropdown"
-//                 aria-expanded="false"
-//               >
-//                 Inscription
-//               </span>
-//               <ul
-//                 className="dropdown-menu"
-//                 aria-labelledby="dropdownMenuButton"
-//               >
-//                 <li>
-//                   <Link className="dropdown-item" to="/entreprises">
-//                     Entreprises
-//                   </Link>
-//                 </li>
-//                 <li>
-//                   <Link className="dropdown-item" to="/professionnels">
-//                     Professionnels
-//                   </Link>
-//                 </li>
-//                 <li>
-//                   <Link className="dropdown-item" to="/universities">
-//                     Universités
-//                   </Link>
-//                 </li>
-//               </ul>
-//             </div>
-//             <div className="dropdown ">
-//               <span
-//                 data-mdb-button-init
-//                 data-mdb-ripple-init
-//                 data-mdb-dropdown-init
-//                 className="dropdown-toggle "
-//                 style={{
-//                   display: "flex",
-//                   alignItems: "center",
-//                   marginRight: "100px",
-//                   width: "50px",
-//                 }}
-//                 type="button"
-//                 id="dropdownMenuButton"
-//                 data-mdb-toggle="dropdown"
-//                 aria-expanded="false"
-//               >
-//                 <img width={15} height={15} src={fr} alt="fr icon" />
-//                 FR
-//               </span>
-//               <ul
-//                 className="dropdown-menu p-3"
-//                 aria-labelledby="dropdownMenuButton"
-//                 style={{
-//                   width: "50px",
-//                   backgroundColor: "transparent",
-//                   border: "none",
-//                 }}
-//               >
-//                 <li>
-//                   <img width={15} height={15} src={uk} alt="fr icon" />
-//                   EN
-//                 </li>
-//                 <li>
-//                   <img width={15} height={15} src={ht} alt="fr icon" />
-//                   HT
-//                 </li>
-//                 <li>
-//                   <img width={15} height={15} src={spain} alt="fr icon" />
-//                   ES
-//                 </li>
-//               </ul>
-//             </div>
-//           </div>
-//         </Navbar.Collapse>
-//     </Navbar>
-//   );
-// }
-
-// export default Main;
