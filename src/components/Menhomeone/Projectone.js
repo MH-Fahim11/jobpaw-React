@@ -1,12 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Slider from "react-slick";
-// import project1 from "../../assets/images/project/project-1-1.jpg";
-// import project2 from "../../assets/images/project/project-1-2.jpg";
-// import project3 from "../../assets/images/project/project-1-3.jpg";
-// import project4 from "../../assets/images/project/project-1-4.jpg";
-// import project5 from "../../assets/images/project/project-1-5.jpg";
-// import project6 from "../../assets/images/project/project-1-6.jpg";
 import { createSlug } from "../Menjobs/Jobfrom";
 import img1 from '../../assets/images/34FinalPhotos/IMG-20240320-WA0051.jpg'
 import img2 from '../../assets/images/34FinalPhotos/IMG-20240320-WA0056.jpg'
@@ -42,51 +35,17 @@ export const tenderItems = [
   },
 ];
 
-// const Projectslider = {
-//   dots: false,
-//   arrows: false,
-//   slidesToShow: 3.2,
-//   centerMode: true,
-//   centerPadding: "60px",
-//   responsive: [
-//     {
-//       breakpoint: 576,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         margin: 30,
-//       },
-//     },
-//     {
-//       breakpoint: 992,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 1,
-//         margin: 30,
-//       },
-//     },
-//   ],
-// };
-
-// const projectImages = [
-//   project1,
-//   project2,
-//   project3,
-//   project4,
-//   project5,
-//   project6,
-// ];
 
 function Projectone() {
   return (
-    <div>
-      <div className="project-one container">
-        <div className="">
+    <div className="bg-p">
+      <div className="project-one container" >
+        
           <div className="sec-title text-center">
             <h6 className="sec-title__tagline">Our Tenders</h6>
             <h3 className="sec-title__title">Recent Tenders</h3>
           </div>
-        </div>
+       
         <div className="row gutter-y-30">
           {tenderItems.map((service, index) => (
             <div key={index} className="col-md-6 col-lg-4">
@@ -146,14 +105,3 @@ function Projectone() {
 }
 
 export default Projectone;
-
-/**
- * 
- *  <div className={styles.card}>
-      <h3>{title}</h3>
-      <p className={styles.description}>{description}</p>
-      <p>Organization: {organization}</p>
-      <p>Deadline: {deadline}</p>
-      <a href={link}>Learn More</a>
-    </div>
-*/

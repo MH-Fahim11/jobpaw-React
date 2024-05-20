@@ -38,7 +38,7 @@ export const researchPapers = [
 
 function Blog() {
   return (
-    <div>
+    <div style={{backgroundColor:"#FDF5DF",marginTop:"50px"}}>
       <section className="blog-one container">
         <div className="">
           <div className="sec-title text-center">

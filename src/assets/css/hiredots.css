@@ -7301,11 +7301,11 @@ body.megamenu-popup-active .mobile-nav__content {
 .client-carousel__one__item img {
   opacity: 0.9;
   transition: all 500ms ease;
-  max-width: 122px;
+  max-width: 125px;
   width: auto !important;
 }
 .client-carousel__one__item:hover img {
-  opacity: 0.6;
+  opacity: 1;
 }
 .client-carousel__border {
   border-bottom: 1px solid var(--hiredots-border-color-2, #ced5dd);
@@ -9397,6 +9397,7 @@ body.megamenu-popup-active .mobile-nav__content {
   background-color: var(--hiredots-white, #fff);
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
   transition: all 0.6s ease;
+  border-radius: 10px;
 }
 .service-one-card:hover {
   background-color: var(--hiredots-primary, #0b2f81);
@@ -9408,6 +9409,8 @@ body.megamenu-popup-active .mobile-nav__content {
   margin: 0px 15px;
   padding: 30px 40px 33px 35px;
   background-color: var(--hiredots-gray, #f0f3f9);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .service-one-card__content {
@@ -9421,6 +9424,8 @@ body.megamenu-popup-active .mobile-nav__content {
 .service-one-card__image img {
   width: 100%;
   height: 350px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .service-one-card__icon {
   display: flex;
@@ -10780,4 +10785,9 @@ body.megamenu-popup-active .mobile-nav__content {
   color: #000 !important;
   border: var(--bs-border-width) solid var(--bs-border-color) !important;
   border-radius: var(--bs-border-radius) !important;
+}
+.bg-p{
+  /* background: linear-gradient(#e66465, #9198e5); */
+  background-image: linear-gradient(135deg, #E3FDF5 10%, #FFE6FA 100%);
+  margin-bottom: 50px;
 }

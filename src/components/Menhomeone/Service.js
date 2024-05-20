@@ -22,11 +22,12 @@ function Service() {
           </div>
           <div className="row gutter-y-30">
             {jobslist.slice(0, 3).map((job, index) => (
-              <div key={index} className="col-md-6 col-lg-4">
+              <div key={index} className="col-md-6 col-lg-4" >
                 <div
                   className="service-one-card service-card-two"
                   data-wow-duration="1500ms"
                   data-wow-delay={`${index}ms`}
+                  
                 >
                   <div className="service-one-card__image">
                     <img src={job.image} alt={job.title} />

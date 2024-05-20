@@ -31,7 +31,7 @@ const Clientslider = {
 
 function Client() {
     return (
-        <div>
+        <div style={{backgroundColor:"#FDF5DF",marginTop:"50px"}}>
             <div className="client-carousel ">
                 <div className="container">
                 
@@ -43,7 +43,7 @@ function Client() {
                             </h3>
                         </div>
                         <div className="col-xl-9">
-                            <Slider className='client-one'{...Clientslider} slidesToShow={5} slidesToScroll={1} autoplay={true} autoplaySpeed={1000}>
+                            <Slider className='client-one'{...Clientslider} slidesToShow={5} slidesToScroll={1} autoplay={true} autoplaySpeed={2000}>
                                 <div className="client-carousel__one__item">
                                     <img src="https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515358_10512.png" alt="hiredots" />
                                 </div>

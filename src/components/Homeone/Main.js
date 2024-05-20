@@ -13,7 +13,6 @@ function Main() {
   return (
     <>
       <div className="page-wrapper">
-        {/* <Header /> */}
         <Sliderone />
         <Funfact />
         <Service />
